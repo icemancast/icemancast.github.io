@@ -1,0 +1,159 @@
+@import 'variables', 'bootstrap/bootstrap';
+
+html {
+	background: #f0f0f0 url(../../images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	background: url(../../images/body.png) left repeat-y;
+}
+
+.name {
+	margin-left: 50px;
+	color: #f0962c;
+	font-family: 'Marck Script', cursive;
+	font-size: 400%;
+	position: fixed;
+}
+
+.bio-image {
+	height: 235px;
+	margin: 30px 0px 0px 75px;
+	width: 269px;
+
+	img {
+		border-collapse: collapse;
+		border: 1px solid #fff;
+		float: left;
+	}
+}
+
+.bio-nav {
+	text-indent: -5000px;
+	float: left;
+	overflow: hidden;
+	width: 32px;
+
+	li {
+		width: 32px;
+	}
+
+	li a {
+		background-color: #9babb5;
+		background-image: url(../../images/sprite.png);
+		display: block;
+		/*float: left;*/
+		height: 32px;
+		overflow: hidden;
+		width: 32px;
+	}
+
+	span {
+		margin: -30px 0px 0px 40px;
+		position: relative;
+		width: 200px;
+		/*margin-left: 10px;*/
+		/*position: relative;*/
+		/*display: block;*/
+		/*float: left;*/
+		/*width: 150px;*/
+	/*span {
+		display: block;
+		float: left;
+		/*display: none;
+	}*/
+	}
+}
+
+.icon-email a {
+	background-position: -2px 0px;
+}
+
+.icon-phone a {
+	background-position: -37px -2px;
+}
+
+.icon-github a {
+	background-position: -72px -2px;
+}
+
+.icon-linkedin a {
+	background-position: -3px -37px;
+}
+
+.icon-googleplus a {
+	background-position: -36px -36px;
+}
+
+.icon-twitter a {
+	background-position: -72px -36px;
+}
+
+.icon-me a {
+	background-position: -2px -71px;
+}
+
+.main-nav {
+	margin: 40px 0px 0px 40px;
+	width: 305px;
+
+	li a {
+		background: #242424;
+		color: #fff;
+		font-size: 18px;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+}
+
+.nav-pills li a {
+		border-radius: 0px;
+}
+
+.content {
+	margin-top: 100px;
+}
+
+.post {
+	border-collapse: collapse;
+	border-bottom: 1px dashed #eea20e;
+	color: #ffffff;
+	margin-bottom: 20px;
+	min-height: 300px;
+	padding-right: 75px;
+
+	img {
+		float: left;
+		margin-right: 8px;
+	}
+
+	a {
+		color: #e6f5ff;
+		text-decoration: underline
+	}
+
+	a:hover {
+		color: #1c6494;
+		text-decoration: none;
+	}
+
+	h2 a {
+		text-decoration: none;
+	}
+}
+
+.nav-area {
+	margin-top: 75px;
+	position: fixed;
+}
+
+footer {
+	font-size: 11px;
+	height: 40px;
+	margin-top: 50px;
+	text-align: center;
+}

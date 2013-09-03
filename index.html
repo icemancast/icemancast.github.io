@@ -1,4 +1,19 @@
 ---
 layout: default
 ---
-test again
+
+{% for post in site.posts %}
+	<div class="post">
+		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		
+		<p>
+			<img src="/media/images/posts/{{post.featured_image}}.jpg" width="225" class="left">
+			{{ post.content }}
+			{% if post.link1_title %}
+				<p><a href="{{post.link1_url}}" targe="_blank">{{post.link1_title}}</a></p>
+			{% endif %}
+		</p>
+
+	</div>
+	<div class="clearfix"></div>
+{% endfor %}

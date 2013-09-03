@@ -19,7 +19,11 @@
 
 <body>
 
-	<h1 class="name">Isaac Castillo</h1>
+	<!-- <div class="container"> -->
+
+	<header class="col-md-12">
+		<h1>Isaac Castillo</h1>
+	</header>
 
 		<div class="row">
 			
@@ -36,7 +40,16 @@
 			<div class="col-md-8 col-md-offset-4">
 
 				<div role="main" class="content">
-					{{content}}
+
+					<div class="post">
+						<h2>{{ title }}</h2>
+						
+						<p>
+							{{ content }}
+						</p>
+
+					</div>
+
 				</div>
 			
 			</div>

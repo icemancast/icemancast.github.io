@@ -2,3 +2,5 @@ source: .
 destination: ./_site
 plugins: ./_plugins
 layouts: ./_layouts
+paginate: 3
+permalink: pretty

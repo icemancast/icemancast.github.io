@@ -12,7 +12,12 @@ layout: default
 			{% if post.link1_title %}
 				<p><a href="{{post.link1_url}}" targe="_blank">{{post.link1_title}}</a></p>
 			{% endif %}
+			{% if post.link2_title %}
+				<p><a href="{{post.link2_url}}" targe="_blank">{{post.link2_title}}</a></p>
+			{% endif %}
 		</p>
+
+		<p><small>Posted on: {{post.date | date_to_string}}</small></p>
 
 	</div>
 	<div class="clearfix"></div>

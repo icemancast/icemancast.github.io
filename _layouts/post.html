@@ -19,18 +19,16 @@
 
 <body>
 
-	<!-- <div class="container"> -->
+	<h1 class="name">Isaac Castillo</h1>
 
-	<header class="col-md-12">
-		<h1>Isaac Castillo</h1>
-	</header>
+	<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Launch demo modal</a>
 
 		<div class="row">
 			
 			<div class="col-md-4 nav-area">
 
 				<div class="bio-image">
-					<img src="{{ 'icemancast@gmail.com' | to_gravatar }}?s=235" />
+					<img src="/media/images/isaac.jpg" class="img-rounded img-responsive" />
 					{% include bio-nav.html %}
 				</div>
 				<div class="clearfix"></div>
@@ -40,34 +38,33 @@
 			<div class="col-md-8 col-md-offset-4">
 
 				<div role="main" class="content">
-
 					<div class="post">
-						<h2>{{ title }}</h2>
-						
-						<p>
-							{{ content }}
-						</p>
+					<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+					<p>
+						<img src="/media/images/posts/{{post.featured_image}}.jpg" width="225" class="left">
+						{{ post.content }}
+						{% if post.link1_title %}
+							<p><a href="{{post.link1_url}}" targe="_blank">{{post.link1_title}}</a></p>
+						{% endif %}
+						{% if post.link2_title %}
+							<p><a href="{{post.link2_url}}" targe="_blank">{{post.link2_title}}</a></p>
+						{% endif %}
+					</p>
 
 					</div>
-
 				</div>
 			
 			</div>
 
 		</div>
-	
-	<!-- </div> -->
 
 	{% include footer.html %}
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="/media/bootstrap/javascripts/bootstrap.js"></script>
+	<script src="/media/bootstrap/javascripts/bootstrap.min.js"></script>
 	<script>
 		(function() {
-			$('.bio-nav').tooltip({
-	      selector: "[data-toggle=tooltip]",
-	      container: "body"
-	    })
+			$('#myModal').modal();
 		})();
 	</script>
 </body>

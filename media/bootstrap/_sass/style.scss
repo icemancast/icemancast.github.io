@@ -123,8 +123,9 @@ body {
 	border-bottom: 1px dashed #eea20e;
 	color: #ffffff;
 	margin-bottom: 20px;
-	min-height: 300px;
-	padding-right: 75px;
+	min-height: 275px;
+	padding: 0px 150px 0px 0px;
+	letter-spacing: 1px;
 
 	img {
 		float: left;
@@ -132,7 +133,7 @@ body {
 	}
 
 	a {
-		color: #e6f5ff;
+		color: #9cd7ff;
 		text-decoration: underline
 	}
 
@@ -143,6 +144,11 @@ body {
 
 	h2 a {
 		text-decoration: none;
+	}
+
+	small {
+		color: #bababa;
+		font-style: italic;
 	}
 }
 

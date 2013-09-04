@@ -19,26 +19,24 @@
 
 <body>
 
-	<!-- <div class="container"> -->
+	<h1 class="name">Isaac Castillo</h1>
 
-	<header class="col-md-12">
-		<h1>Isaac Castillo</h1>
-	</header>
+	<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Launch demo modal</a>
 
 		<div class="row">
 			
 			<div class="col-md-4 nav-area">
 
 				<div class="bio-image">
-					<img src="http://www.gravatar.com/avatar/50c7f7863d7d37fa9c2da7d795160a79?s=235" />
+					<img src="/media/images/isaac.jpg" class="img-rounded img-responsive" />
 										<ul class="nav nav-pills nav-stacked bio-nav">
-						<li class="icon-email"><a href="mailto:icemancast@gmail.com" data-toggle="tooltip" title="first tooltip">Email</a></li>
-				    <li class="icon-phone"><a href="#">Phone</a></li>
-				    <li class="icon-github"><a href="https://github.com/icemancast">Github</a></li>
-				    <li class="icon-linkedin"><a href="http://www.linkedin.com/profile/view?id=18871848">Linkedin</a></li>
-				    <li class="icon-googleplus"><a href="https://plus.google.com/104205610870262290545/posts">Google Plus</a></li>
-				    <li class="icon-twitter"><a href="https://twitter.com/icemancast">Twitter</a></li>
-				    <li class="icon-me"><a href="#">Me</a></li>
+						<li class="icon-email"><a href="mailto:icemancast@gmail.com" data-toggle-tooltip="tooltip" title="icemancast@gmail">Email</a></li>
+				    <li class="icon-phone"><a data-toggle="modal" data-toggle-tooltip="tooltip" href="#my-digits" title="(210) 595-0499">Phone</a></li>
+				    <li class="icon-github"><a href="https://github.com/icemancast" data-toggle-tooltip="tooltip" title="/icemancast">Github</a></li>
+				    <li class="icon-linkedin"><a href="http://www.linkedin.com/profile/view?id=18871848" data-toggle-tooltip="tooltip" title="Linkedin">Linkedin</a></li>
+				    <li class="icon-googleplus"><a href="https://plus.google.com/104205610870262290545/posts" data-toggle-tooltip="tooltip" title="Google+">Google Plus</a></li>
+				    <li class="icon-twitter"><a href="https://twitter.com/icemancast" data-toggle-tooltip="tooltip" title="@icemancast">Twitter</a></li>
+				    <li class="icon-me"><a data-toggle="modal" href="#about-me" data-toggle-tooltip="tooltip" title="About Me">Me</a></li>
 					</ul>
 				</div>
 				<div class="clearfix"></div>
@@ -52,34 +50,29 @@
 			<div class="col-md-8 col-md-offset-4">
 
 				<div role="main" class="content">
-
 					<div class="post">
-						<h2></h2>
+					<h2><a href=""></a></h2>
+					<p>
+						<img src="/media/images/posts/.jpg" width="225" class="left">
 						
-						<p>
-							<p>Created this a while back because my wife and I could never find the register of our checkbook. So I created an online checkbook that we can access from anywhere. Of course our checkbook is password protected and somewhere in space ;)</p>
-						</p>
+						
+						
+					</p>
 
 					</div>
-
 				</div>
 			
 			</div>
 
 		</div>
-	
-	<!-- </div> -->
 
 	<footer>&copy; 2013 Isaac Castillo | built with: Jekyll, bootstrap, Sass</footer>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="/media/bootstrap/javascripts/bootstrap.js"></script>
+	<script src="/media/bootstrap/javascripts/bootstrap.min.js"></script>
 	<script>
 		(function() {
-			$('.bio-nav').tooltip({
-	      selector: "[data-toggle=tooltip]",
-	      container: "body"
-	    })
+			$('#myModal').modal();
 		})();
 	</script>
 </body>

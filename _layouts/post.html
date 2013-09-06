@@ -19,38 +19,29 @@
 
 <body>
 
-	<h1 class="name">Isaac Castillo</h1>
+	{% include mobile-nav.html %}
 
-	<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Launch demo modal</a>
+	<h1 class="name visible-md visible-lg"><a href="/">Isaac Castillo</a></h1>
 
 		<div class="row">
 			
-			<div class="col-md-4 nav-area">
-
-				<div class="bio-image">
-					<img src="/media/images/isaac.jpg" class="img-rounded img-responsive" />
-					{% include bio-nav.html %}
-				</div>
-				<div class="clearfix"></div>
-				{% include nav.html %}
-			</div>
+			{% include bio.html %}
 
 			<div class="col-md-8 col-md-offset-4">
 
 				<div role="main" class="content">
 					<div class="post">
-					<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+					<h2>{{ page.title }}</h2>
 					<p>
-						<img src="/media/images/posts/{{post.featured_image}}.jpg" width="225" class="left">
-						{{ post.content }}
-						{% if post.link1_title %}
-							<p><a href="{{post.link1_url}}" targe="_blank">{{post.link1_title}}</a></p>
+						<img src="/media/images/posts/{{ page.featured_image }}.jpg" width="225" class="left">
+						{{ content }}
+						{% if page.link1_title %}
+							<p><a href="{{post.link1_url}}" targe="_blank">{{page.link1_title}}</a></p>
 						{% endif %}
-						{% if post.link2_title %}
-							<p><a href="{{post.link2_url}}" targe="_blank">{{post.link2_title}}</a></p>
+						{% if page.link2_title %}
+							<p><a href="{{post.link2_url}}" targe="_blank">{{page.link2_title}}</a></p>
 						{% endif %}
 					</p>
-
 					</div>
 				</div>
 			
@@ -60,11 +51,17 @@
 
 	{% include footer.html %}
 
+	{% include modals.html %}
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="/media/bootstrap/javascripts/bootstrap.min.js"></script>
 	<script>
 		(function() {
-			$('#myModal').modal();
+			$('.bio-nav').tooltip({
+	      selector: "[data-toggle-tooltip=tooltip]",
+	      container: '.nav',
+	      placement: 'right'
+	    })
 		})();
 	</script>
 </body>

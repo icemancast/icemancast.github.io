@@ -3962,12 +3962,12 @@ a.list-group-item {
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
-  color: black;
+  color: white;
   text-shadow: 0 1px 0 white;
   opacity: 0.2;
   filter: alpha(opacity=20); }
   .close:hover, .close:focus {
-    color: black;
+    color: white;
     text-decoration: none;
     cursor: pointer;
     opacity: 0.5;
@@ -4021,7 +4021,7 @@ body.modal-open {
 
 .modal-content {
   position: relative;
-  background-color: white;
+  background-color: black;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0px;
@@ -4047,7 +4047,7 @@ body.modal-open {
 
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #212121;
   min-height: 16.42857px; }
 
 .modal-header .close {
@@ -4065,7 +4065,7 @@ body.modal-open {
   margin-top: 15px;
   padding: 19px 20px 20px;
   text-align: right;
-  border-top: 1px solid #e5e5e5; }
+  border-top: 1px solid #212121; }
   .modal-footer:before, .modal-footer:after {
     content: " ";
     /* 1 */
@@ -4913,10 +4913,12 @@ html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 100%; }
 
 body {
-  background: url(../../images/body.png) left repeat-y; }
+  background: url(../../images/body.png) left repeat-y;
+  min-height: 100%; }
 
 .name {
   margin-left: 50px;
@@ -4924,10 +4926,15 @@ body {
   font-family: 'Marck Script', cursive;
   font-size: 400%;
   position: fixed; }
+  .name a {
+    color: #f0962c;
+    text-decoration: none; }
+  .name a:hover {
+    text-decoration: underline; }
 
 .bio-image {
   height: 235px;
-  margin: 30px 0px 0px 75px;
+  margin: 30px 0px 0px 125px;
   width: 269px; }
   .bio-image img {
     border-collapse: collapse;
@@ -4998,9 +5005,9 @@ body {
 .nav-pills li a {
   border-radius: 0px; }
 
-.content {
-  margin-top: 100px; }
-
+@media screen and (min-width: 992px) {
+  .content {
+    margin-top: 100px; } }
 .post {
   border-collapse: collapse;
   border-bottom: 1px dashed #eea20e;
@@ -5011,7 +5018,7 @@ body {
   letter-spacing: 1px; }
   .post img {
     float: left;
-    margin-right: 8px; }
+    margin: 0px 8px 8px 0px; }
   .post a {
     color: #9cd7ff;
     text-decoration: underline; }
@@ -5028,8 +5035,23 @@ body {
   margin-top: 75px;
   position: fixed; }
 
+.modal-title, .modal-body {
+  color: #e7e7e7; }
+
+.modal-phone {
+  letter-spacing: 1px;
+  text-align: center; }
+
+.modal-content {
+  opacity: 0.75; }
+
 footer {
   font-size: 11px;
   height: 40px;
-  margin-top: 50px;
+  margin-top: 100px;
   text-align: center; }
+  footer a {
+    color: #555555;
+    text-decoration: underline; }
+  footer a:hover {
+    color: #000; }

@@ -4,3 +4,4 @@ plugins: ./_plugins
 layouts: ./_layouts
 paginate: 3
 permalink: pretty
+name: Isaac Castillo | My Blog and some of my work

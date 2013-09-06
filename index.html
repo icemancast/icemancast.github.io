@@ -3,11 +3,12 @@ layout: default
 ---
 
 {% for post in site.posts %}
-	<div class="post">
+	<div class="post col-sm-11 col-sm-offset-1">
 		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 		
 		<p>
-			<img src="/media/images/posts/{{post.featured_image}}.jpg" width="225" class="left">
+			<img src="/media/images/posts/{{post.featured_image}}.jpg" class="left img-responsive">
+			<div class="clearfix hidden-md hidden-lg"></div>
 			{{ post.content }}
 			{% if post.link1_title %}
 				<p><a href="{{post.link1_url}}" targe="_blank">{{post.link1_title}}</a></p>

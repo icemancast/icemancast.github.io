@@ -2,10 +2,7 @@
 layout: post
 title: Rails Routing & Paths
 tags:
-- chrome
-- HTML
-- javascript
-- jQuery
+- Ruby on Rails
 featured_image: rails
 link1_title:
 link1_url:

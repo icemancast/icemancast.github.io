@@ -1,0 +1,26 @@
+@media screen and (min-width: 992px) {
+
+	body {
+		background: url(../images/body.png) left repeat-y;
+		min-height: 100%;
+	}
+	
+  .content {
+		margin-top: 100px;
+	}
+
+	.post {
+		padding: 0px 150px 0px 0px;
+	}
+
+}
+
+@media all and (max-width: 991px) {
+	body {
+		background: none;
+	}
+
+	.post {
+		padding: 0px 20px 0px 20px;
+	}
+}

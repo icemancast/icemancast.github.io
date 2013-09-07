@@ -14,7 +14,7 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Rosario:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" media="all" href="/media/bootstrap/css/style.css" />
+	<link rel="stylesheet" media="all" href="/media/css/style.css" />
 </head>
 
 <body>
@@ -29,11 +29,12 @@
 
 			<div class="col-md-8 col-md-offset-4">
 
-				<div role="main" class="content">
+				<div role="main" class="content post-margin">
 					<div class="post">
 					<h2>{{ page.title }}</h2>
 					<p>
 						<img src="/media/images/posts/{{ page.featured_image }}.jpg" width="225" class="left">
+						<div class="clearfix hidden-md hidden-lg"></div>
 						{{ content }}
 						{% if page.link1_title %}
 							<p><a href="{{post.link1_url}}" targe="_blank">{{page.link1_title}}</a></p>
@@ -49,6 +50,8 @@
 
 		</div>
 
+	<div class="clearfix"></div>
+	
 	{% include footer.html %}
 
 	{% include modals.html %}

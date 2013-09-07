@@ -3,13 +3,13 @@ layout: default
 ---
 
 {% for post in site.posts %}
-	<div class="post">
+	<article class="post">
 		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 		
 		<p>
-			<img src="/media/images/posts/{{post.featured_image}}.jpg" class="left img-responsive">
+			<img src="/media/images/posts/{{post.featured_image}}.jpg" class="left img-responsive" alt="Responsive image">
 			<div class="clearfix hidden-md hidden-lg"></div>
-			{{ post.content }}
+			{{ post.excerpt }}
 			{% if post.link1_title %}
 				<p><a href="{{post.link1_url}}" targe="_blank">{{post.link1_title}}</a></p>
 			{% endif %}
@@ -20,6 +20,8 @@ layout: default
 
 		<p><small>Posted on: {{post.date | date_to_string}}</small></p>
 
-	</div>
+		<p><small>Tags: {{ post.tags | array_to_sentence_string }}</small></p>
+
+	</article>
 	<div class="clearfix"></div>
 {% endfor %}

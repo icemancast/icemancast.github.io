@@ -4914,10 +4914,14 @@ td.visible-print {
     min-height: 100%; }
 
   .content {
-    margin-top: 100px; }
+    margin-top: 100px;
+    padding-right: 150px; }
 
-  .post {
-    padding: 0px 150px 0px 0px; } }
+  /*
+  	.post {
+  		padding: 0px 150px 0px 0px;
+  	}
+  */ }
 @media all and (max-width: 991px) {
   body {
     background: none; }
@@ -5020,10 +5024,12 @@ html {
 .nav-pills li a {
   border-radius: 0px; }
 
+.content {
+  color: #ffffff; }
+
 .post {
   border-collapse: collapse;
   border-bottom: 1px dashed #eea20e;
-  color: #ffffff;
   margin-bottom: 20px;
   min-height: 275px;
   letter-spacing: 1px; }

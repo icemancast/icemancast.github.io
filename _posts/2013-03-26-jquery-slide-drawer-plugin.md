@@ -6,7 +6,7 @@ tags:
 - HTML5
 - jQuery
 featured_image: jqueryplugin
-link1_title: Visit Site
+link1_title: Visit Page
 link1_url: http://www.icastwork.com/jquery-slide-drawer-plugin/
 link2_title:
 link2_url:

@@ -9,7 +9,7 @@ tags:
 - Sass	
 featured_image: jquery-slide-drawer
 link1_title: Visit Site
-link1_url: http://icastwork.com/projects/slidedrawer
+link1_url: http://projects.icastwork.com/slidedrawer/
 link2_title:
 link2_url:
 ---

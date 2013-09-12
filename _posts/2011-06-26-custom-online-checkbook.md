@@ -9,7 +9,7 @@ tags:
 - PHP	
 featured_image: checkbook
 link1_title: Visit Site
-link1_url: http://icastwork.com/projects/checkbook/
+link1_url: http://projects.icastwork.com/checkbook/
 link2_title:
 link2_url:
 ---

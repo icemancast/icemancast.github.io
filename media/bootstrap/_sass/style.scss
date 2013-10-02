@@ -126,6 +126,16 @@ html {
 
 .content {
 	color: #ffffff;
+
+	a {
+		color: #9cd7ff;
+		text-decoration: underline
+	}
+
+	a:hover {
+		color: #1c6494;
+		text-decoration: none;
+	}
 }
 
 .post {

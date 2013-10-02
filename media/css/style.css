@@ -5026,6 +5026,12 @@ html {
 
 .content {
   color: #ffffff; }
+  .content a {
+    color: #9cd7ff;
+    text-decoration: underline; }
+  .content a:hover {
+    color: #1c6494;
+    text-decoration: none; }
 
 .post {
   border-collapse: collapse;

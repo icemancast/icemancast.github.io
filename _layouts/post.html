@@ -31,18 +31,18 @@
 
 				<div role="main" class="content post-margin">
 					<div class="post">
-					<h2>{{ page.title }}</h2>
-					<p>
-						<img src="/media/images/posts/{{ page.featured_image }}.jpg" width="225" class="left">
-						<div class="clearfix hidden-md hidden-lg"></div>
-						{{ content }}
-						{% if page.link1_title %}
-							<p><a href="{{page.link1_url}}" targe="_blank">{{page.link1_title}}</a></p>
-						{% endif %}
-						{% if page.link2_title %}
-							<p><a href="{{page.link2_url}}" targe="_blank">{{page.link2_title}}</a></p>
-						{% endif %}
-					</p>
+						<h2>{{ page.title }}</h2>
+						<p>
+							<img src="/media/images/posts/{{ page.featured_image }}.jpg" width="225" class="left">
+							<div class="clearfix hidden-md hidden-lg"></div>
+							{{ content }}
+							{% if page.link1_title %}
+								<p><a href="{{page.link1_url}}" targe="_blank">{{page.link1_title}}</a></p>
+							{% endif %}
+							{% if page.link2_title %}
+								<p><a href="{{page.link2_url}}" targe="_blank">{{page.link2_title}}</a></p>
+							{% endif %}
+						</p>
 					</div>
 				</div>
 			

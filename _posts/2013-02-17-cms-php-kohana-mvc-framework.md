@@ -11,8 +11,8 @@ tags:
 - MySQL
 - PHP	
 featured_image: kohana
-link1_title: Visit Site
-link1_url: http://www.icastwork.com/projects/kohana/
+link1_title:
+link1_url:
 link2_title:
 link2_url:
 ---

@@ -9,6 +9,7 @@ link1_title: Visit Node Site
 link1_url: http://nodejs.org
 link2_title: Paypal Using Node.js
 link2_url: http://www.nearform.com/nodecrunch/?p=109#.Un6kt5RARSh 
+excerpt: I started a 3 week course on node.js. I never really thought to learn it before thinking it was framework like emberjs and I would not have any need for it. After the first class I think I changed my mind
 ---
 I started a 3 week course on node.js. I never really thought to learn it
 before thinking it was framework like emberjs and I would not have any

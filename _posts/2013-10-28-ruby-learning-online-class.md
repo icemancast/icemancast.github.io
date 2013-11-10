@@ -9,6 +9,7 @@ link1_title: Visit Course
 link1_url: http://www.rubylearning.com
 link2_title: Git Repo of my Class
 link2_url: https://bitbucket.org/icemancast/rl_batch46/src
+excerpt: About 4 weeks ago I started an online Ruby course. At first when I purchased the course I didn't think it was going to be intense. I thought here is another course that I can take when I have a chance to get to it. Right away the instructor IM me and hence started my roller
 ---
 About 4 weeks ago I started an online Ruby course. At first when I
 purchased the course I didn't think it was going to be intense. I

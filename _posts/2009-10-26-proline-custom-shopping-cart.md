@@ -11,5 +11,6 @@ link1_title: Visit Site
 link1_url: http://www.pro-linepublications.com
 link2_title:
 link2_url:
+excerpt: The client needed a shopping cart with downloadable curriculum. The shopping cart process checkouts via paypal. A paypal notify script was created to receive a signal from paypal to verify payment then sends a confirmation email with the file download
 ---
 The client needed a shopping cart with downloadable curriculum. The shopping cart process checkouts via paypal. A paypal notify script was created to receive a signal from paypal to verify payment then sends a confirmation email with the file download.

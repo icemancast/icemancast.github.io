@@ -13,5 +13,6 @@ link1_title: Visit Site
 link1_url: http://happyhandyman.com/shop-johnnies-favorites
 link2_title:
 link2_url:
+excerpt: Found and modified shopping cart plugin for wordpress to work with client’s existing merchant account
 ---
 Found and modified shopping cart plugin for wordpress to work with client’s existing merchant account.

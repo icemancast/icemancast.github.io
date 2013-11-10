@@ -11,5 +11,6 @@ link1_title: Badges Earned
 link1_url: https://backpack.openbadges.org/share/bb549b0dd239b1b1879b62192abff9c7/
 link2_title:
 link2_url:
+excerpt: I took a course to sharpen my Chrome developer tool skills. Makes developing and debugging faster
 ---
 I took a course to sharpen my Chrome developer tool skills. Makes developing and debugging faster.

@@ -15,6 +15,7 @@ link1_title:
 link1_url:
 link2_title:
 link2_url:
+excerpt: Custom Content management system built with Kohana MVC Framework 3.1. Navigation management, content management, events, podcast and sermon management
 ---
 Custom Content management system built with Kohana MVC Framework 3.1. Navigation management, content management, events, podcast and sermon management.
 

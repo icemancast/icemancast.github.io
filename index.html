@@ -9,7 +9,7 @@ layout: default
 		<p>
 			<img src="/media/images/posts/{{post.featured_image}}.jpg" class="left img-responsive" alt="Responsive image">
 			<div class="clearfix hidden-md hidden-lg"></div>
-			{{ post.excerpt }}
+      <p>{{ post.excerpt }} ... <a href="{{ post.url }}">more >></a></p>
 			{% if post.link1_title %}
 				<p><a href="{{post.link1_url}}" targe="_blank">{{post.link1_title}}</a></p>
 			{% endif %}
@@ -18,9 +18,7 @@ layout: default
 			{% endif %}
 		</p>
 
-		<p><small>Posted on: {{post.date | date_to_string}}</small></p>
-
-		<p><small>Tags: {{ post.tags | array_to_sentence_string }}</small></p>
+		<p><small>Posted on: {{post.date | date_to_string}} | Tags: {{ post.tags | array_to_sentence_string }} </small></p>
 
 	</article>
 	<div class="clearfix"></div>

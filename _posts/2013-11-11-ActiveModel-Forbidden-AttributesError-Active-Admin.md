@@ -10,7 +10,8 @@ link2_title: Fix for Active Admin
 link2_url: http://stackoverflow.com/questions/13091011/how-to-get-activeadmin-to-work-with-strong-parameters
 excerpt: I came across an error on a rails project I am working on, ActiveModel::ForbiddenAttributesError. Of course right away I hit up google to find an answer
 ---
-I came across an error on a rails project I am working on, ActiveModel::ForbiddenAttributesError. 
+I came across an error on a rails project I am working on,
+ActiveModel::ForbiddenAttributesError. 
 Of course right away I hit up google to find an answer.
 Found out that there was a change from Rails 3 to Rails 4 please read
 the Strong Parameters Explained in the documentation below. After

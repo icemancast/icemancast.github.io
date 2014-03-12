@@ -1,17 +1,27 @@
 @import 'variables', 'bootstrap/bootstrap', 'mobile';
 
 html {
-	background: url(../images/cream_pixels.png);
+	background: #4b82a8 url(../images/cream_pixels.png) no-repeat center center fixed;
+  /*-webkit-background-size: cover;*/
+  /*-moz-background-size: cover;*/
+  /*-o-background-size: cover;*/
+  /*background-size: cover;*/
   height: 100%;
 }
 
+/*body {
+	background: url(../images/body.png) left repeat-y;
+}*/
+
 .name {
 	margin-left: 50px;
+	color: #f0962c;
+	font-family: 'Marck Script', cursive;
 	font-size: 400%;
 	position: fixed;
 
 	a {
-		color: #242424;
+		color: #f0962c;
 		text-decoration: none;
 	}
 
@@ -46,6 +56,7 @@ html {
 		background-color: #9babb5;
 		background-image: url(../images/sprite.png);
 		display: block;
+		/*float: left;*/
 		height: 32px;
 		overflow: hidden;
 		width: 32px;
@@ -55,6 +66,16 @@ html {
 		margin: -30px 0px 0px 40px;
 		position: relative;
 		width: 200px;
+		/*margin-left: 10px;*/
+		/*position: relative;*/
+		/*display: block;*/
+		/*float: left;*/
+		/*width: 150px;*/
+	/*span {
+		display: block;
+		float: left;
+		/*display: none;
+	}*/
 	}
 }
 
@@ -104,10 +125,10 @@ html {
 }
 
 .content {
-	color: #464646;
+	color: #ffffff;
 
 	a {
-		color: #22608c;
+		color: #9cd7ff;
 		text-decoration: underline
 	}
 
@@ -119,7 +140,7 @@ html {
 
 .post {
 	border-collapse: collapse;
-	border-bottom: 1px dashed #464646;
+	border-bottom: 1px dashed #eea20e;
 	margin-bottom: 20px;
 	min-height: 275px;
 	letter-spacing: 1px;
@@ -130,7 +151,7 @@ html {
 	}
 
 	a {
-		color: #22608c;
+		color: #9cd7ff;
 		text-decoration: underline
 	}
 
@@ -144,7 +165,7 @@ html {
 	}
 
 	small {
-		color: #8d8d8d;
+		color: #bababa;
 		font-style: italic;
 	}
 }
@@ -182,14 +203,14 @@ html {
 
 footer {
 	bottom: 0;
-	color: #8d8d8d;
+	color: #bebebe;
 	font-size: 11px;
 	height: 40px;
 	margin-top: 100px;
 	text-align: center;
 
 	a {
-		color: #8d8d8d;
+		color: #cecece;
 		text-decoration: underline;
 	}
 

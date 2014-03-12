@@ -4929,24 +4929,15 @@ td.visible-print {
   .post {
     padding: 0px 20px 0px 20px; } }
 html {
-  background: #4b82a8 url(../images/background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(../images/cream_pixels.png);
   height: 100%; }
 
-/*body {
-	background: url(../images/body.png) left repeat-y;
-}*/
 .name {
   margin-left: 50px;
-  color: #f0962c;
-  font-family: 'Marck Script', cursive;
   font-size: 400%;
   position: fixed; }
   .name a {
-    color: #f0962c;
+    color: #242424;
     text-decoration: none; }
   .name a:hover {
     text-decoration: underline; }
@@ -4971,24 +4962,13 @@ html {
     background-color: #9babb5;
     background-image: url(../images/sprite.png);
     display: block;
-    /*float: left;*/
     height: 32px;
     overflow: hidden;
     width: 32px; }
   .bio-nav span {
     margin: -30px 0px 0px 40px;
     position: relative;
-    width: 200px;
-    /*margin-left: 10px;*/
-    /*position: relative;*/
-    /*display: block;*/
-    /*float: left;*/
-    /*width: 150px;*/
-    	/*span {
-    	display: block;
-    	float: left;
-    	/*display: none;
-    }*/ }
+    width: 200px; }
 
 .icon-email a {
   background-position: -2px 0px; }
@@ -5025,9 +5005,9 @@ html {
   border-radius: 0px; }
 
 .content {
-  color: #ffffff; }
+  color: #464646; }
   .content a {
-    color: #9cd7ff;
+    color: #22608c;
     text-decoration: underline; }
   .content a:hover {
     color: #1c6494;
@@ -5035,7 +5015,7 @@ html {
 
 .post {
   border-collapse: collapse;
-  border-bottom: 1px dashed #eea20e;
+  border-bottom: 1px dashed #464646;
   margin-bottom: 20px;
   min-height: 275px;
   letter-spacing: 1px; }
@@ -5043,7 +5023,7 @@ html {
     float: left;
     margin: 0px 8px 8px 0px; }
   .post a {
-    color: #9cd7ff;
+    color: #22608c;
     text-decoration: underline; }
   .post a:hover {
     color: #1c6494;
@@ -5051,7 +5031,7 @@ html {
   .post h2 a {
     text-decoration: none; }
   .post small {
-    color: #bababa;
+    color: #8d8d8d;
     font-style: italic; }
 
 .nav-area {
@@ -5078,13 +5058,13 @@ html {
 
 footer {
   bottom: 0;
-  color: #bebebe;
+  color: #8d8d8d;
   font-size: 11px;
   height: 40px;
   margin-top: 100px;
   text-align: center; }
   footer a {
-    color: #cecece;
+    color: #8d8d8d;
     text-decoration: underline; }
   footer a:hover {
     color: #000; }

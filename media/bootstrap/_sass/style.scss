@@ -7,7 +7,7 @@ html {
 
 .name {
 	margin-left: 50px;
-	font-size: 400%;
+	font-size: 55px;
 	position: fixed;
 
 	a {
@@ -18,11 +18,19 @@ html {
 	a:hover {
 		text-decoration: underline;
 	}
+
+}
+
+.position-title {
+  color: #727272;
+  font-size: 20px;
+  margin: 85px 0px 0px 50px;
+  position: fixed;
 }
 
 .bio-image {
 	height: 235px;
-	margin: 30px 0px 0px 125px;
+	margin: 55px 0px 0px 125px;
 	width: 269px;
 
 	img {
@@ -33,17 +41,23 @@ html {
 }
 
 .bio-nav {
-	text-indent: -5000px;
+  text-indent: -5000px;
 	float: left;
 	overflow: hidden;
 	width: 32px;
+
+  /*i {*/
+    /*color: #fff;*/
+    /*font-size: 19px;*/
+    /*[>text-indent: -9999px;<]*/
+  /*}*/
 
 	li {
 		width: 32px;
 	}
 
 	li a {
-		background-color: #9babb5;
+    background-color: #9babb5;
 		background-image: url(../images/sprite.png);
 		display: block;
 		height: 32px;
@@ -51,39 +65,39 @@ html {
 		width: 32px;
 	}
 
-	span {
-		margin: -30px 0px 0px 40px;
-		position: relative;
-		width: 200px;
-	}
+  span {
+    margin: -30px 0px 0px 40px;
+    position: relative;
+    width: 200px;
+  }
 }
 
 .icon-email a {
-	background-position: -2px 0px;
+  background-position: -2px 0px;
 }
 
 .icon-phone a {
-	background-position: -37px -2px;
+  background-position: -37px -2px;
 }
 
 .icon-github a {
-	background-position: -72px -2px;
+  background-position: -72px -2px;
 }
 
 .icon-linkedin a {
-	background-position: -3px -37px;
+  background-position: -3px -37px;
 }
 
 .icon-googleplus a {
-	background-position: -36px -36px;
+  background-position: -36px -36px;
 }
 
 .icon-twitter a {
-	background-position: -72px -36px;
+  background-position: -72px -36px;
 }
 
 .icon-me a {
-	background-position: -2px -71px;
+  background-position: -2px -71px;
 }
 
 .main-nav {

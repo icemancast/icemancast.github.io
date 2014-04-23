@@ -213,7 +213,6 @@ table {
 
   @page {
     margin: 2cm .5cm; }
-
   p,
   h2,
   h3 {
@@ -253,7 +252,7 @@ table {
 
 html {
   font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Rosario", sans-serif;
@@ -1870,7 +1869,6 @@ input[type="button"].btn-block {
   font-family: 'Glyphicons Halflings';
   src: font-url("bootstrap/glyphicons-halflings-regular.eot");
   src: font-url("bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), font-url("bootstrap/glyphicons-halflings-regular.woff") format("woff"), font-url("bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), font-url("bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg"); }
-
 .glyphicon {
   position: relative;
   top: 1px;
@@ -3634,28 +3632,24 @@ a.thumbnail:focus {
 
   to {
     background-position: 0 0; } }
-
 @-moz-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
 
   to {
     background-position: 0 0; } }
-
 @-o-keyframes progress-bar-stripes {
   from {
     background-position: 0 0; }
 
   to {
     background-position: 40px 0; } }
-
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
 
   to {
     background-position: 0 0; } }
-
 .progress {
   overflow: hidden;
   height: 20px;
@@ -4470,7 +4464,6 @@ body.modal-open {
 
 @-ms-viewport {
   width: device-width; }
-
 @media screen and (max-width: 400px) {
   @-ms-viewport {
     width: 320px; } }
@@ -4934,7 +4927,7 @@ html {
 
 .name {
   margin-left: 50px;
-  font-size: 400%;
+  font-size: 55px;
   position: fixed; }
   .name a {
     color: #242424;
@@ -4942,9 +4935,15 @@ html {
   .name a:hover {
     text-decoration: underline; }
 
+.position-title {
+  color: #727272;
+  font-size: 20px;
+  margin: 85px 0px 0px 50px;
+  position: fixed; }
+
 .bio-image {
   height: 235px;
-  margin: 30px 0px 0px 125px;
+  margin: 55px 0px 0px 125px;
   width: 269px; }
   .bio-image img {
     border-collapse: collapse;
@@ -4955,7 +4954,12 @@ html {
   text-indent: -5000px;
   float: left;
   overflow: hidden;
-  width: 32px; }
+  width: 32px;
+  /*i {*/
+  /*color: #fff;*/
+  /*font-size: 19px;*/
+  /*[>text-indent: -9999px;<]*/
+  /*}*/ }
   .bio-nav li {
     width: 32px; }
   .bio-nav li a {

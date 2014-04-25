@@ -11,8 +11,8 @@ tags:
 - MySQL
 - PHP	
 featured_image: kohana
-link1_title:
-link1_url:
+link1_title: Kohana CMS Project
+link1_url: http://projects.icastwork.com/kohana/admin/user/login
 link2_title:
 link2_url:
 excerpt: Custom Content management system built with Kohana MVC Framework 3.1. Navigation management, content management, events, podcast and sermon management

@@ -46,7 +46,7 @@ I wanted to install rails on my Ubuntu 14.04 vagrant virtual box just to keep it
 		
 		$ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 
-6. Reload shell with bash profile
+6. Reload shell with new bash profile updates
 
 		$ source ~/.bashrc
 
@@ -82,13 +82,13 @@ I wanted to install rails on my Ubuntu 14.04 vagrant virtual box just to keep it
 
 		$ gem install rails
 
-14. Restart shell
+14. Reload shell with new bash profile updates
 
-		$ exec $SHELL -l
+		$ source ~/.bashrc
 
 15. Go to sites directory and create new app
 
-		$ cd /vagra/sites
+		$ cd /vagrant/sites
 		$ rails new test_app
 		$ cd test_app
 		

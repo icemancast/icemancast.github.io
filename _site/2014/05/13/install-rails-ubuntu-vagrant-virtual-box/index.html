@@ -103,7 +103,8 @@
 
     <pre><code> $ sudo apt-get install python-software-properties
  $ sudo apt-get -y install curl git-core nodejs
- $ sudo apt-get install gcc make libssl-dev libsqlite3-dev
+ $ sudo apt-get install gcc make libsqlite3-dev
+ $ sudo apt-get install libssl-dev libtool libxslt libksba openssl
  $ sudo apt-get install postgresql postgresql-contrib
  $ sudo apt-get install build-essential
  $ sudo apt-get -y update
@@ -195,7 +196,14 @@ $ cd test_app
 </code></pre>
   </li>
   <li>
-    <p>Start rails server and designate port</p>
+    <p>Run bundler</p>
+
+    <pre><code>$ bundle update
+$ bundle install
+</code></pre>
+  </li>
+  <li>
+    <p>Start rails server and designate port.</p>
 
     <pre><code>$ rails s -p 5050
 </code></pre>

@@ -28,7 +28,8 @@ I wanted to install rails on my Ubuntu 14.04 vagrant virtual box just to keep it
 		
 		$ sudo apt-get install python-software-properties
 		$ sudo apt-get -y install curl git-core nodejs
-		$ sudo apt-get install gcc make libssl-dev libsqlite3-dev
+		$ sudo apt-get install gcc make libsqlite3-dev
+		$ sudo apt-get install libssl-dev libtool libxslt libksba openssl
 		$ sudo apt-get install postgresql postgresql-contrib
 		$ sudo apt-get install build-essential
 		$ sudo apt-get -y update
@@ -91,16 +92,21 @@ I wanted to install rails on my Ubuntu 14.04 vagrant virtual box just to keep it
 		$ cd /vagrant/sites
 		$ rails new test_app
 		$ cd test_app
+
+16. Run bundler
+
+		$ bundle update
+		$ bundle install
 		
-16. Start rails server and designate port
+17. Start rails server and designate port.
 
 		$ rails s -p 5050
 
-17. Go to rails app via your browser. Go to the ip address of your vagrant box and add the port number used above. See example url below:
+18. Go to rails app via your browser. Go to the ip address of your vagrant box and add the port number used above. See example url below:
 
 	###http://192.168.77.77:5050
 
-18. Write some code :)
+19. Write some code :)
 
 View the resources I used to compile this below:
 

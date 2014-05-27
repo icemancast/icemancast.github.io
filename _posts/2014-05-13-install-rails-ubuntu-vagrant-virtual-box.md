@@ -16,7 +16,7 @@ link3_title: Digital Ocean Install Ruby/Rails on Ubuntu
 link3_url: https://www.digitalocean.com/community/articles/how-to-install-ruby-on-rails-on-ubuntu-12-04-lts-with-rbenv--2
 link3_title: rbenv Multiple Versions of Ruby
 link3_url: http://www.lauradhamilton.com/how-to-use-rbenv-to-manage-multiple-versions-of-ruby
-excerpt: I wanted to install rails on my Ubuntu 14.04 vagrant virtual box
+excerpt: I wanted to install rails on my Ubuntu 14.04 vagrant virtual box just to keep it on a nice development environment and to keep it separate from my MacOSX environment
 ---
 I wanted to install rails on my Ubuntu 14.04 vagrant virtual box just to keep it on a nice development environment and to keep it separate from my MacOSX environment. In all seriousness I think through it all I wanted some sort of bragging rights on something like this. The steps following are what I have compiled from the resources that I have read which are linked to below. Please let me know if you have any issues with the install so I can update this post. My Ubuntu environment was created with vagrant and ansible. If you would like the same setup you can get it here [vagrant-nginx](https://github.com/icemancast/vagrant-nginx). Enjoy!
 
@@ -30,6 +30,7 @@ I wanted to install rails on my Ubuntu 14.04 vagrant virtual box just to keep it
 		$ sudo apt-get -y install curl git-core nodejs
 		$ sudo apt-get install gcc make libsqlite3-dev
 		$ sudo apt-get install libssl-dev libtool libxslt libksba openssl
+		$ sudo apt-get install libxslt-dev libxml2-dev libsqlite3-dev
 		$ sudo apt-get install postgresql postgresql-contrib
 		$ sudo apt-get install build-essential
 		$ sudo apt-get -y update

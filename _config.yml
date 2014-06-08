@@ -7,3 +7,7 @@ permalink: pretty
 future: false
 name: Isaac Castillo | My Blog and some of my work
 markdown: kramdown
+sitemap:
+  file: "/sitemap.xml"
+  include_posts:
+  - "/index.html"

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Install Wordpress On Virtual Vagrant Box Video
+title: Parallax Front End Layout
 tags:
 - HTML
 - CSS

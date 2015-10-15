@@ -67,3 +67,7 @@ The mixin:
         animation-fill-mode: both;
         animation-name: $direction;
     }
+
+See the end product:
+
+<iframe width="100%" height="300" src="//jsfiddle.net/icemancast/o1wj0cfx/4/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>

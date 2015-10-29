@@ -17,7 +17,7 @@ future: false
 
 # Site settings
 baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "http://icastwork.com" # the base hostname & protocol for your site
+url: "http://icemancast.com" # the base hostname & protocol for your site
 twitter_username: icemancast
 github_username:  icemancast
 

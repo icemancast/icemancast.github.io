@@ -9,8 +9,8 @@ description: > # I have been doing design, web design and web development work f
   vagrant virtual box.
 source: . # Where is source code
 destination: ./_site # Where to compile
-plugins: ./_plugins
-layouts: ./_layouts
+plugins_dir: ./_plugins
+layouts_dir: ./_layouts
 paginate: 3
 permalink: pretty
 future: false

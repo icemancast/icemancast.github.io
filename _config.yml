@@ -30,4 +30,5 @@ sitemap:
   include_posts:
   - "/index.html"
 
-
+# Supported gems
+gems: [jekyll-paginate]

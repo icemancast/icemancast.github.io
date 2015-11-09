@@ -20,41 +20,44 @@
 	{% include analytics.html %}
 	{% include mobile-nav.html %}
 
-  <h1 class="name visible-md visible-lg"><a href="/">{{ site.data.personal.owner_name }}</a></h1>
-  <h2 class="position-title visible-md visible-lg">{{ site.data.personal.position }}</h2>
+	<div class="container-fluid">
 
-		<div class="row">
-			
-			{% include bio.html %}
+		<h1 class="name visible-md visible-lg"><a href="/">{{ site.data.personal.owner_name }}</a></h1>
+		<h2 class="position-title visible-md visible-lg">{{ site.data.personal.position }}</h2>
 
-			<div class="col-md-8 col-md-offset-4">
+			<div class="row">
+				
+				{% include bio.html %}
 
-				<div role="main" class="content post-margin">
-					<div class="post">
-						<h2>{{ page.title }}</h2>
-						<p>
-							<img src="/media/images/posts/{{ page.featured_image }}.jpg" class="img-responsive img-thumbnail" width="225" class="left">
-							<div class="clearfix hidden-md hidden-lg"></div>
-							{{ content }}
-							{% if page.link1_title %}
-								<p><a href="{{page.link1_url}}" targe="_blank">{{page.link1_title}}</a></p>
-							{% endif %}
-							{% if page.link2_title %}
-								<p><a href="{{page.link2_url}}" targe="_blank">{{page.link2_title}}</a></p>
-							{% endif %}
-						</p>
+				<div class="col-md-8 col-md-offset-4">
+
+					<div role="main" class="content post-margin">
+						<div class="post">
+							<h2>{{ page.title }}</h2>
+							<p>
+								<img src="/media/images/posts/{{ page.featured_image }}.jpg" class="img-responsive img-thumbnail" width="225" class="left">
+								<div class="clearfix hidden-md hidden-lg"></div>
+								{{ content }}
+								{% if page.link1_title %}
+									<p><a href="{{page.link1_url}}" targe="_blank">{{page.link1_title}}</a></p>
+								{% endif %}
+								{% if page.link2_title %}
+									<p><a href="{{page.link2_url}}" targe="_blank">{{page.link2_title}}</a></p>
+								{% endif %}
+							</p>
+						</div>
 					</div>
+				
 				</div>
-			
+
 			</div>
 
-		</div>
+		<div class="clearfix"></div>
 
-	<div class="clearfix"></div>
-	
-	{% include footer.html %}
+		{% include footer.html %}
 
-	{% include modals.html %}
+		{% include modals.html %}
+	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="/media/bootstrap/javascripts/bootstrap.min.js"></script>

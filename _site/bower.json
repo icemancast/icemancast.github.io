@@ -1,0 +1,23 @@
+{
+  "name": "Icmenacast.com Blog",
+  "homepage": "http://icemancast.com",
+  "authors": [
+    "Isaac Castillo <icemancast@gmail.com>"
+  ],
+  "description": "My personal blog about programming and all things I learn web.",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}

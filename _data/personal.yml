@@ -1,12 +1,6 @@
 owner_name: Isaac Castillo
 position: Web Application Developer
-bio: > # I have been doing design, web design and web development work for over
-  15 years. I enjoy writing, creating and debugging code. I get a
-  satisfaction when all the pieces of a development project come together.
-  I have worked with various technologies and languages; Kohana framework,
-  PHP, MySQL, CSS, Sass, Capistrano, Git and Wordpress just to name a few.
-  My current lamp development environment is Laravel (php MVC framework) on a
-  vagrant virtual box.
+bio: > # I have been doing design and web application development work for over 15 years. I enjoy solving hard problems with code. Yeah it makes me beat my forehead against the screen but after doing so I come across wonderful solutions. I have worked with various frameworks/libraries and languages; Kohana framework, PHP, MySQL, CSS, Sass, Capistrano, Git, Jquery, Emberjs and Wordpress just to name a few. My current lamp development environment is Laravel (php MVC framework) and Wordpress on a vagrant virtual box.
 phone: (210) 595-0499
 linkedin: view?id=18871848
 google_plus: 104205610870262290545

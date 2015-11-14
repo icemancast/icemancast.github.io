@@ -46,8 +46,26 @@
 								{% endif %}
 							</p>
 						</div>
-					</div>
-				
+
+						<div class="clearfix"></div>
+
+						<div id="disqus_thread"></div>
+						<script>
+							var disqus_config = function () {
+								this.page.url = '{{ site.url }}'; // Replace PAGE_URL with your page's canonical URL variable
+								this.page.identifier = '{{ page.id }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+							(function() { // DON'T EDIT BELOW THIS LINE
+								var d = document, s = d.createElement('script');
+
+								s.src = '//icemancast.disqus.com/embed.js';
+
+								s.setAttribute('data-timestamp', +new Date());
+									(d.head || d.body).appendChild(s);
+							})();
+						</script>
+						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+					</div>				
 				</div>
 
 			</div>
@@ -60,7 +78,7 @@
 	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="/media/bootstrap/javascripts/bootstrap.min.js"></script>
+	<script src="/vendor/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 	<script>
 		(function() {
 			$('.bio-nav').tooltip({
@@ -70,6 +88,6 @@
 	    })
 		})();
 	</script>
-	{% include analytics.html %}
+	<script id="dsq-count-scr" src="//icemancast.disqus.com/count.js" async></script>
 </body>
 </html>

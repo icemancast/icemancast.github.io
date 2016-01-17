@@ -43,7 +43,7 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li><a href="http://courses.icemancast.com">Courses/Tutorials</a></li> 
+      <li><a href="http://gettingstarted.tv">GettingStarted.tv (courses)</a></li> 
 <li><a href="http://echods.com">My Business</a></li>
 <li><a href="/resume/">Resume</a></li>
 
@@ -88,7 +88,7 @@
 	<div class="clearfix"></div>
 	<nav>
 		<ul class="nav nav-pills nav-stacked main-nav">
-			<li><a href="http://courses.icemancast.com">Courses/Tutorials</a></li> 
+			<li><a href="http://gettingstarted.tv">GettingStarted.tv (courses)</a></li> 
 <li><a href="http://echods.com">My Business</a></li>
 <li><a href="/resume/">Resume</a></li>
 
@@ -110,13 +110,14 @@
   <li>
     <p>ssh into your vagrant box</p>
 
-    <pre><code> $ vagrant ssh
+    <div class="highlighter-rouge"><pre class="highlight"><code> $ vagrant ssh
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Update and install prerequisites</p>
 
-    <pre><code> $ sudo apt-get install python-software-properties
+    <div class="highlighter-rouge"><pre class="highlight"><code> $ sudo apt-get install python-software-properties
  $ sudo apt-get -y install curl git-core nodejs
  $ sudo apt-get install gcc make libsqlite3-dev
  $ sudo apt-get install libssl-dev libtool libxslt libksba openssl
@@ -126,103 +127,119 @@
  $ sudo apt-get -y update
  $ sudo apt-get upgrade
 </code></pre>
+    </div>
   </li>
   <li>
     <p>clone repo</p>
 
-    <pre><code> $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+    <div class="highlighter-rouge"><pre class="highlight"><code> $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Add path to bash</p>
 
-    <pre><code> $ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.bashrc
+    <div class="highlighter-rouge"><pre class="highlight"><code> $ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.bashrc
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Add rbenv init to commands</p>
 
-    <pre><code> $ echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.bashrc
+    <div class="highlighter-rouge"><pre class="highlight"><code> $ echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.bashrc
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Reload shell with new bash profile updates</p>
 
-    <pre><code> $ source ~/.bashrc
+    <div class="highlighter-rouge"><pre class="highlight"><code> $ source ~/.bashrc
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Check if install, should print out rbenv function to terminal</p>
 
-    <pre><code> $ type rbenv
+    <div class="highlighter-rouge"><pre class="highlight"><code> $ type rbenv
 </code></pre>
+    </div>
   </li>
   <li>
     <p>install ruby-build so you can use rbenv install</p>
 
-    <pre><code> $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+    <div class="highlighter-rouge"><pre class="highlight"><code> $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Check available ruby versions</p>
 
-    <pre><code> $ rbenv install -l
+    <div class="highlighter-rouge"><pre class="highlight"><code> $ rbenv install -l
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Install ruby version. I installed latest :)</p>
 
-    <pre><code>$ rbenv install 2.1.2
+    <div class="highlighter-rouge"><pre class="highlight"><code>$ rbenv install 2.1.2
 $ rbenv rehash
 </code></pre>
+    </div>
   </li>
   <li>
     <p>set global ruby version</p>
 
-    <pre><code>$ rbenv global 2.1.2
+    <div class="highlighter-rouge"><pre class="highlight"><code>$ rbenv global 2.1.2
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Install bundler and rake. If they are already installed just hit “N” so you don’t overwrite them. No need to overwrite it</p>
 
-    <pre><code>$ gem install rdoc
+    <div class="highlighter-rouge"><pre class="highlight"><code>$ gem install rdoc
 $ gem install bundler
 $ gem install rake 
 $ rbenv rehash
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Install rails</p>
 
-    <pre><code>$ gem install rails
+    <div class="highlighter-rouge"><pre class="highlight"><code>$ gem install rails
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Reload shell with new bash profile updates</p>
 
-    <pre><code>$ source ~/.bashrc
+    <div class="highlighter-rouge"><pre class="highlight"><code>$ source ~/.bashrc
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Go to sites directory and create new app</p>
 
-    <pre><code>$ cd /vagrant/sites
+    <div class="highlighter-rouge"><pre class="highlight"><code>$ cd /vagrant/sites
 $ rails new test_app
 $ cd test_app
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Run bundler</p>
 
-    <pre><code>$ bundle update
+    <div class="highlighter-rouge"><pre class="highlight"><code>$ bundle update
 $ bundle install
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Start rails server and designate port.</p>
 
-    <pre><code>$ rails s -p 5050
+    <div class="highlighter-rouge"><pre class="highlight"><code>$ rails s -p 5050
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Go to rails app via your browser. Go to the ip address of your vagrant box and add the port number used above. See example url below:</p>
@@ -271,7 +288,7 @@ $ bundle install
 
 		<div class="clearfix"></div>
 
-		<footer>&copy; 2015 Isaac Castillo | built with: <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, <a href="http://sass-lang.com/">Sass</a>. Hosted on <a href="https://github.com/">Github</a>.</footer>
+		<footer>&copy; 2016 Isaac Castillo | built with: <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, <a href="http://sass-lang.com/">Sass</a>. Hosted on <a href="https://github.com/">Github</a>.</footer>
 
 
 		<!-- Modal -->

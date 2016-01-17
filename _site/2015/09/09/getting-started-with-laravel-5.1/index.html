@@ -3,10 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Ruby Learning Online Class</title>
+	<title>Getting Started with Laravel 5.1</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Isaac Castillo">
-	<meta name="description" content="About 4 weeks ago I started an online Ruby course. At first when I purchased the course I didn't think it was going to be intense. I thought here is another course that I can take when I have a chance to get to it. Right away the instructor IM me and hence started my roller">
+	<meta name="description" content="Laravel is a php mvc framework that has gained a lot of popularity in the php community. With laravel you can create custom applications and get up in running a shorter amount of time.">
 
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
@@ -100,26 +100,106 @@
 
 					<div role="main" class="content post-margin">
 						<div class="post">
-							<h2>Ruby Learning Online Class</h2>
+							<h2>Getting Started with Laravel 5.1</h2>
 							<p>
-								<img src="/media/images/posts/ruby.jpg" class="img-responsive img-thumbnail" width="225" class="left">
+								<img src="/media/images/posts/laravel.jpg" class="img-responsive img-thumbnail" width="225" class="left">
 								<div class="clearfix hidden-md hidden-lg"></div>
-								<p>About 4 weeks ago I started an online Ruby course. At first when I
-purchased the course I didn’t think it was going to be intense. I
-thought here is another course that I can take when I have a chance to
-get to it. Right away the instructor IM me and hence started my roller
-coaster ride of learning, reading and doing paired programming via
-google hang out. Another plus to the course was that the instructor
-teaches all in vim. I’ve used vim before but not to this extent. Now I
-haven’t looked back for my IDE of choice. This has been updated via vim
-:). Visit the course below and take a look at my git repo of practices
-and assignments.</p>
+								<p>Laravel is a php mvc framework that has gained a lot of popularity in the php community. With laravel you can create custom applications and get up in running a shorter amount of time.</p>
+
+<p>I was asked to speak at a local PHP Meetup. Even better yet I was asked to speak about Laravel. So I took advantage of this opportunity and wanted to introduce Laravel 5.1 to the community. I recorded the full meeting and in video and posted it on youtube. Below is also my guideline that you see in the video. Watch the <a href="https://www.youtube.com/watch?v=B7FJV9KIn58">Getting Started with Laravel 5.1</a> [time: 1:12:00] video now!</p>
+
+<h3 id="mvc">MVC</h3>
+
+<h3 id="installing-composer">Installing composer</h3>
+
+<p>Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.</p>
+
+<p><a href="https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx">https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx</a></p>
+
+<p><code class="highlighter-rouge">
+$ curl -sS https://getcomposer.org/installer | php
+</code></p>
+
+<p>Now you can run <code class="highlighter-rouge">php composer.par</code> to install packages. Doing the below command you only need to run composer without php and <code class="highlighter-rouge">.phar</code> part of the command. This moves our composer to our bin so can can just call <code class="highlighter-rouge">composer</code> from now on.</p>
+
+<p><code class="highlighter-rouge">
+$ mv composer.phar /usr/local/bin/composer
+</code></p>
+
+<h3 id="add-the-laravel-command">Add the laravel command</h3>
+
+<p>Once composer is intalled we can easily install the laravel with the folowing:</p>
+
+<p><code class="highlighter-rouge">
+composer global require "laravel/installer=~1.1"
+</code></p>
+
+<h3 id="make-sure-laravel-command-is-in-our-system-path">Make sure laravel command is in our system path</h3>
+
+<p><code class="highlighter-rouge">
+subl .bash_profile
+PATH="~/.composer/vendor/bin:$PATH"
+</code></p>
+
+<h3 id="whats-next">What’s next?</h3>
+<p>So after those are installed we no longer need to install or start up composer or laravel command anymore. They now belong to our system and can just run them whenever we need.</p>
+
+<h3 id="start-a-new-application">Start a new application</h3>
+
+<p>To start a laravel</p>
+
+<p><code class="highlighter-rouge">
+$ laravel new blog
+</code></p>
+
+<p>Or alternatively you can run:</p>
+
+<p><code class="highlighter-rouge">
+$ composer create-project laravel/laravel blog --prefer-dist
+</code></p>
+
+<h3 id="start-the-laravel-server">Start the laravel server</h3>
+
+<p><code class="highlighter-rouge">
+$ php artisan serve
+</code>
+Now you are enter <code class="highlighter-rouge">http://localhost:8000</code> into your browswer and see the laravel 5 welcome screen. So you can continue to develop 
+using the artisan server for your development. You would still need to install mysql for any database usage. For my example I have what is called a virtual box where I can have a hosted development environment.</p>
+
+<h3 id="routes">Routes</h3>
+
+<p>Routes control the what url entered in the browser displays what information. Below we are just returning a string in the browser.</p>
+
+<p><code class="highlighter-rouge">
+Route::get('/test', function() {
+    return 'something here';
+});
+</code></p>
+
+<p>We really won’t be returning strings in our browser so lets point this route to a controller that can handle our views.</p>
+
+<p><code class="highlighter-rouge">
+Route::get('/hello', 'WelcomeController@hello');
+</code>
+#### Controllers</p>
+
+<p>Create a blank controller with the following command.</p>
+
+<p><code class="highlighter-rouge">
+$ php artisan make:controller WelcomeController --plain
+</code></p>
+
+<h2 id="views">Views</h2>
+
+<p>Blade templating basics</p>
+
+<h2 id="migration">Migration</h2>
+
+<p><code class="highlighter-rouge">
+php artisan migrate:make create_posts_table --create=posts
+</code></p>
 
 								
-									<p><a href="http://www.rubylearning.com" targe="_blank">Visit Course</a></p>
-								
-								
-									<p><a href="https://bitbucket.org/icemancast/rl_batch46/src" targe="_blank">Git Repo of my Class</a></p>
 								
 							</p>
 						</div>
@@ -130,7 +210,7 @@ and assignments.</p>
 						<script>
 							var disqus_config = function () {
 								this.page.url = 'http://icemancast.com'; // Replace PAGE_URL with your page's canonical URL variable
-								this.page.identifier = '/2013/10/28/ruby-learning-online-class'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+								this.page.identifier = '/2015/09/09/getting-started-with-laravel-5.1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 							};
 							(function() { // DON'T EDIT BELOW THIS LINE
 								var d = document, s = d.createElement('script');

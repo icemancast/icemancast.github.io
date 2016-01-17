@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Getting Started with Laravel 5.1</title>
+	<title>Getting Started with Laravel Homestead</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Isaac Castillo">
 	<meta name="description" content="Laravel is a php mvc framework that has gained a lot of popularity in the php community. With laravel you can create custom applications and get up in running a shorter amount of time.">
@@ -43,7 +43,7 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li><a href="http://courses.icemancast.com">Courses/Tutorials</a></li> 
+      <li><a href="http://gettingstarted.tv">GettingStarted.tv (courses)</a></li> 
 <li><a href="http://echods.com">My Business</a></li>
 <li><a href="/resume/">Resume</a></li>
 
@@ -88,7 +88,7 @@
 	<div class="clearfix"></div>
 	<nav>
 		<ul class="nav nav-pills nav-stacked main-nav">
-			<li><a href="http://courses.icemancast.com">Courses/Tutorials</a></li> 
+			<li><a href="http://gettingstarted.tv">GettingStarted.tv (courses)</a></li> 
 <li><a href="http://echods.com">My Business</a></li>
 <li><a href="/resume/">Resume</a></li>
 
@@ -100,105 +100,139 @@
 
 					<div role="main" class="content post-margin">
 						<div class="post">
-							<h2>Getting Started with Laravel 5.1</h2>
+							<h2>Getting Started with Laravel Homestead</h2>
 							<p>
 								<img src="/media/images/posts/laravel.jpg" class="img-responsive img-thumbnail" width="225" class="left">
 								<div class="clearfix hidden-md hidden-lg"></div>
-								<p>Laravel is a php mvc framework that has gained a lot of popularity in the php community. With laravel you can create custom applications and get up in running a shorter amount of time.</p>
+								<p>Laravel Homestead is Laravel’s virtual machine setup that can run an entire laravel site setup. Not only that but in this video you can also see that you can add multiple local sites to install. I have been developing my own virtual machine with ansible that I maintain and keep up with for all my dev projects before homestead came about. Reading over the documention for homestead and filling in the the gaps from my own virtual machine experience, I recorded a video showing how to install
+Laravel Homestead. <a href="https://www.youtube.com/watch?v=NcIPANwBghU">Watch the Laravel Homestead video</a>
+and leave me a comment below.</p>
 
-<p>I was asked to speak at a local PHP Meetup. Even better yet I was asked to speak about Laravel. So I took advantage of this opportunity and wanted to introduce Laravel 5.1 to the community. I recorded the full meeting and in video and posted it on youtube. Below is also my guideline that you see in the video. Watch the <a href="https://www.youtube.com/watch?v=B7FJV9KIn58">Getting Started with Laravel 5.1</a> [time: 1:12:00] video now!</p>
+<h2 id="my-notes-from-the-video">My notes from the video</h2>
 
-<h3 id="mvc">MVC</h3>
+<p>The instructions below are for installing homestead on a mac machine. Most of these may cary over to a pc but there may be some different inputs that are better covered on the Laravel Docs for homestead.</p>
 
-<h3 id="installing-composer">Installing composer</h3>
+<p>First make sure you install vagrant and virtual box. After that run the following. Note it may take a while since you will be downloading the box to your computer.</p>
 
-<p>Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.</p>
+<h2 id="why-a-virtual-machine">Why a virtual machine</h2>
 
-<p><a href="https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx">https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx</a></p>
+<p>A virtual machine gives you the ability to be as close as you can to the actual production environment. Not only that but because it is so cheap/easy to spin up a virtual machine that if the box breaks you can either provision it or start a new one easily.</p>
 
-<p><code>
-$ curl -sS https://getcomposer.org/installer | php
-</code></p>
+<h2 id="prerequisites">Prerequisites</h2>
 
-<p>Now you can run <code>php composer.par</code> to install packages. Doing the below command you only need to run composer without php and <code>.phar</code> part of the command. This moves our composer to our bin so can can just call <code>composer</code> from now on.</p>
+<h3 id="subl-command">Subl command</h3>
 
-<p><code>
-$ mv composer.phar /usr/local/bin/composer
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+</code></pre>
+</div>
 
-<h3 id="add-the-laravel-command">Add the laravel command</h3>
+<h3 id="composer">Composer</h3>
 
-<p>Once composer is intalled we can easily install the laravel with the folowing:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
+</code></pre>
+</div>
 
-<p><code>
-composer global require "laravel/installer=~1.1"
-</code></p>
+<h3 id="sequel-pro">Sequel Pro</h3>
 
-<h3 id="make-sure-laravel-command-is-in-our-system-path">Make sure laravel command is in our system path</h3>
+<p><a href="http://www.sequelpro.com/">Download sequel pro</a>. It’s a great tool for mysql administration.</p>
 
-<p><code>
-subl .bash_profile
-PATH="~/.composer/vendor/bin:$PATH"
-</code></p>
+<h3 id="ssh-keys">SSH Keys</h3>
 
-<h3 id="whats-next">What’s next?</h3>
-<p>So after those are installed we no longer need to install or start up composer or laravel command anymore. They now belong to our system and can just run them whenever we need.</p>
+<p><a href="https://help.github.com/articles/generating-ssh-keys/">Generate your SSH Keys</a></p>
 
-<h3 id="start-a-new-application">Start a new application</h3>
+<h2 id="vagrant-and-virtualbox-which-you-can-install-with-the-following">Vagrant and Virtualbox which you can install with the following:</h2>
 
-<p>To start a laravel</p>
+<h3 id="install-homebrew">Install homebrew</h3>
 
-<p><code>
-$ laravel new blog
-</code></p>
+<p>Homebrew allows you to install other applications easily at the command line.</p>
 
-<p>Or alternatively you can run:</p>
+<p>ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”</p>
 
-<p><code>
-$ composer create-project laravel/laravel blog --prefer-dist
-</code></p>
+<h3 id="install-cask">Install Cask</h3>
 
-<h3 id="start-the-laravel-server">Start the laravel server</h3>
+<p>This allows you to install Cask which helps with install Mac Applications.</p>
 
-<p><code>
-$ php artisan serve
-</code>
-Now you are enter <code>http://localhost:8000</code> into your browswer and see the laravel 5 welcome screen. So you can continue to develop 
-using the artisan server for your development. You would still need to install mysql for any database usage. For my example I have what is called a virtual box where I can have a hosted development environment.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>brew install caskroom/cask/brew-cask
+</code></pre>
+</div>
 
-<h3 id="routes">Routes</h3>
+<h3 id="install-vagrant-and-virtualbox">Install Vagrant and Virtualbox</h3>
 
-<p>Routes control the what url entered in the browser displays what information. Below we are just returning a string in the browser.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>brew cask install vagrant
+brew cask install virtualbox
+</code></pre>
+</div>
 
-<p><code>
-Route::get('/test', function() {
-    return 'something here';
-});
-</code></p>
+<h2 id="installing-homestead">Installing homestead</h2>
 
-<p>We really won’t be returning strings in our browser so lets point this route to a controller that can handle our views.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ cd ~
+$ vagrant box add laravel/homestead
+</code></pre>
+</div>
 
-<p><code>
-Route::get('/hello', 'WelcomeController@hello');
-</code>
-#### Controllers</p>
+<p>Next we need to install the homestead recipe for our server. The yaml file that gets installed will help you manage your own local domains.</p>
 
-<p>Create a blank controller with the following command.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ git clone https://github.com/laravel/homestead.git vagrant-homestead Next run the initialization script for homestead
 
-<p><code>
-$ php artisan make:controller WelcomeController --plain
-</code></p>
+$ cd vagrant-homestead
+$ bash init.sh
+</code></pre>
+</div>
 
-<h2 id="views">Views</h2>
+<p>Open the following file in your favor editor:</p>
 
-<p>Blade templating basics</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>/Users/(yourUser)/.homestead/Homestead.yml
+</code></pre>
+</div>
 
-<h2 id="migration">Migration</h2>
+<p>I modified the folders to have “nfs” type because I noticed a better performance with the tie to my local folder. So my yaml file looks like below</p>
 
-<p><code>
-php artisan migrate:make create_posts_table --create=posts
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>folders:
+    - map: ~/Sites
+      to: /home/vagrant/Code
+      type: "nfs"
 
+sites
+    - map: homestead.app
+      to: /home/vagrant/Code/homestead.app/public
+</code></pre>
+</div>
+
+<p>I left my ssh keys alone since they are same ones I use for most stuff. so yours should be:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>~/.ssh/id_rsa.pub
+</code></pre>
+</div>
+
+<p>If you have not setup your ssh keys just yet you should now. Here are the instructions to do so. <a href="https://help.github.com/articles/generating-ssh-keys/">Setup SSH Keys</a>.</p>
+
+<h2 id="run-vagrant-up">Run vagrant up</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cd ~
+vagrant up
+</code></pre>
+</div>
+
+<h2 id="edit-your-local-vhost">Edit your local vhost</h2>
+
+<p>Edit your hosts file in your favorite editor.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ sudo vi /etc/hosts
+192.168.10.10  homestead.app
+</code></pre>
+</div>
+
+<h2 id="install-a-laravel-site">Install a laravel site</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ composer create-project --prefer-dist laravel/laravel homestead.app
+
+$ composer install
+</code></pre>
+</div>
+
+								
+									<p><a href="https://www.youtube.com/watch?v=NcIPANwBghU" targe="_blank">Watch Laravel Homestead Video</a></p>
 								
 								
 							</p>
@@ -210,7 +244,7 @@ php artisan migrate:make create_posts_table --create=posts
 						<script>
 							var disqus_config = function () {
 								this.page.url = 'http://icemancast.com'; // Replace PAGE_URL with your page's canonical URL variable
-								this.page.identifier = '/2015/09/09/getting-started-with-laravel-5.1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+								this.page.identifier = '/2016/01/17/getting-started-with-laravel-homestead'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 							};
 							(function() { // DON'T EDIT BELOW THIS LINE
 								var d = document, s = d.createElement('script');
@@ -229,7 +263,7 @@ php artisan migrate:make create_posts_table --create=posts
 
 		<div class="clearfix"></div>
 
-		<footer>&copy; 2015 Isaac Castillo | built with: <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, <a href="http://sass-lang.com/">Sass</a>. Hosted on <a href="https://github.com/">Github</a>.</footer>
+		<footer>&copy; 2016 Isaac Castillo | built with: <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, <a href="http://sass-lang.com/">Sass</a>. Hosted on <a href="https://github.com/">Github</a>.</footer>
 
 
 		<!-- Modal -->

@@ -43,7 +43,7 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li><a href="http://courses.icemancast.com">Courses/Tutorials</a></li> 
+      <li><a href="http://gettingstarted.tv">GettingStarted.tv (courses)</a></li> 
 <li><a href="http://echods.com">My Business</a></li>
 <li><a href="/resume/">Resume</a></li>
 
@@ -88,7 +88,7 @@
 	<div class="clearfix"></div>
 	<nav>
 		<ul class="nav nav-pills nav-stacked main-nav">
-			<li><a href="http://courses.icemancast.com">Courses/Tutorials</a></li> 
+			<li><a href="http://gettingstarted.tv">GettingStarted.tv (courses)</a></li> 
 <li><a href="http://echods.com">My Business</a></li>
 <li><a href="/resume/">Resume</a></li>
 
@@ -113,19 +113,20 @@ with. Remember if you already have a post resource route place this json
 route above that one for this to work. If you have solution that is different
 than this one let me know, I would like this see it.</p>
 
-<p>In your <code>routes.php</code> file place the following route or what makes sense for your situation.</p>
+<p>In your <code class="highlighter-rouge">routes.php</code> file place the following route or what makes sense for your situation.</p>
 
-<pre><code>// Create route for json file
+<div class="highlighter-rouge"><pre class="highlight"><code>// Create route for json file
 Route::get('/posts.json', 'PostsController@postToJson');
 ...
 ...
 // Regular route resource if you have one
 Route::resource('posts', 'PostsController');
 </code></pre>
+</div>
 
-<p>In your <code>postsController.php</code> file or any other controller add the following:</p>
+<p>In your <code class="highlighter-rouge">postsController.php</code> file or any other controller add the following:</p>
 
-<pre><code>// Create an action for the route
+<div class="highlighter-rouge"><pre class="highlight"><code>// Create an action for the route
 public function postToJson()
 {
   // Query here for json you want to return
@@ -135,6 +136,7 @@ public function postToJson()
   return Response::json($post-&gt;toArray(), 200);
 }
 </code></pre>
+</div>
 
 <p>Also below is a url to a gist of the code.</p>
 
@@ -171,7 +173,7 @@ public function postToJson()
 
 		<div class="clearfix"></div>
 
-		<footer>&copy; 2015 Isaac Castillo | built with: <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, <a href="http://sass-lang.com/">Sass</a>. Hosted on <a href="https://github.com/">Github</a>.</footer>
+		<footer>&copy; 2016 Isaac Castillo | built with: <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, <a href="http://sass-lang.com/">Sass</a>. Hosted on <a href="https://github.com/">Github</a>.</footer>
 
 
 		<!-- Modal -->

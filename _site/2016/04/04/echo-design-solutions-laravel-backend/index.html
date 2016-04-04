@@ -3,10 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Install Rails on Ubuntu 14 Vagrant Virtual Box</title>
+	<title>Echo Design Solutions - Laravel Backend</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Isaac Castillo">
-	<meta name="description" content="I wanted to install rails on my Ubuntu 14.04 vagrant virtual box just to keep it on a nice development environment and to keep it separate from my MacOSX environment">
+	<meta name="description" content="I needed a foundation that we could build on to manage our clients and projects more effectively.">
 
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
@@ -102,165 +102,15 @@
 
 					<div role="main" class="content post-margin">
 						<div class="post">
-							<h2>Install Rails on Ubuntu 14 Vagrant Virtual Box</h2>
+							<h2>Echo Design Solutions - Laravel Backend</h2>
 							<p>
-								<img src="/media/images/posts/rails.jpg" class="img-responsive img-thumbnail" width="225" class="left">
+								<img src="/media/images/posts/laravel.jpg" class="img-responsive img-thumbnail" width="225" class="left">
 								<div class="clearfix hidden-md hidden-lg"></div>
-								<p>I wanted to install rails on my Ubuntu 14.04 vagrant virtual box just to keep it on a nice development environment and to keep it separate from my MacOSX environment. In all seriousness I think through it all I wanted some sort of bragging rights on something like this. The steps following are what I have compiled from the resources that I have read which are linked to below. Please let me know if you have any issues with the install so I can update this post. My Ubuntu environment was created with vagrant and ansible. If you would like the same setup you can get it here <a href="https://bitbucket.org/echods/vagrant-dev-environment">vagrant-nginx</a>. Enjoy!</p>
-
-<ol>
-  <li>
-    <p>ssh into your vagrant box</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ vagrant ssh
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Update and install prerequisites</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ sudo apt-get install python-software-properties
- $ sudo apt-get -y install curl git-core nodejs
- $ sudo apt-get install gcc make libsqlite3-dev
- $ sudo apt-get install libssl-dev libtool libxslt libksba openssl
- $ sudo apt-get install libxslt-dev libxml2-dev libsqlite3-dev
- $ sudo apt-get install postgresql postgresql-contrib
- $ sudo apt-get install build-essential
- $ sudo apt-get -y update
- $ sudo apt-get upgrade
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>clone repo</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Add path to bash</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.bashrc
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Add rbenv init to commands</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.bashrc
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Reload shell with new bash profile updates</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ source ~/.bashrc
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Check if install, should print out rbenv function to terminal</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ type rbenv
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>install ruby-build so you can use rbenv install</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Check available ruby versions</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code> $ rbenv install -l
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Install ruby version. I installed latest :)</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code>$ rbenv install 2.1.2
-$ rbenv rehash
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>set global ruby version</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code>$ rbenv global 2.1.2
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Install bundler and rake. If they are already installed just hit “N” so you don’t overwrite them. No need to overwrite it</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code>$ gem install rdoc
-$ gem install bundler
-$ gem install rake 
-$ rbenv rehash
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Install rails</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code>$ gem install rails
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Reload shell with new bash profile updates</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code>$ source ~/.bashrc
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Go to sites directory and create new app</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code>$ cd /vagrant/sites
-$ rails new test_app
-$ cd test_app
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Run bundler</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code>$ bundle update
-$ bundle install
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Start rails server and designate port.</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code>$ rails s -p 5050
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Go to rails app via your browser. Go to the ip address of your vagrant box and add the port number used above. See example url below:</p>
-
-    <p>###http://192.168.77.77:5050</p>
-  </li>
-  <li>
-    <p>Write some code :)</p>
-  </li>
-</ol>
-
-<p>View the resources I used to compile this below:</p>
-
+								<p>I needed a foundation that we could build on to manage our clients and projects more effectively. This stack is Laravel 5.2, Mysql and used github hooks to deploy to our digital ocean server. Created user roles and permissions to help manage the different members that will be accessing this for updates.</p>
 
 								
-									<p><a href="https://github.com/sstephenson/rbenv" targe="_blank">rbenv Source and Install</a></p>
+									<p><a href="http://echods.com" targe="_blank">Echo Design Solutions</a></p>
 								
-								
-									<p><a href="https://github.com/sstephenson/ruby-build#installation" targe="_blank">Ruby Buil Install</a></p>
 								
 							</p>
 						</div>
@@ -271,7 +121,7 @@ $ bundle install
 						<script>
 							var disqus_config = function () {
 								this.page.url = 'http://icemancast.com'; // Replace PAGE_URL with your page's canonical URL variable
-								this.page.identifier = '/2014/05/13/install-rails-ubuntu-vagrant-virtual-box'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+								this.page.identifier = '/2016/04/04/echo-design-solutions-laravel-backend'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 							};
 							(function() { // DON'T EDIT BELOW THIS LINE
 								var d = document, s = d.createElement('script');

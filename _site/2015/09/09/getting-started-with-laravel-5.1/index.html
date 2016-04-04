@@ -118,30 +118,30 @@
 
 <p><a href="https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx">https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx</a></p>
 
-<p><code class="highlighter-rouge">
-$ curl -sS https://getcomposer.org/installer | php
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -sS https://getcomposer.org/installer | php
+</code></pre>
+</div>
 
 <p>Now you can run <code class="highlighter-rouge">php composer.par</code> to install packages. Doing the below command you only need to run composer without php and <code class="highlighter-rouge">.phar</code> part of the command. This moves our composer to our bin so can can just call <code class="highlighter-rouge">composer</code> from now on.</p>
 
-<p><code class="highlighter-rouge">
-$ mv composer.phar /usr/local/bin/composer
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ mv composer.phar /usr/local/bin/composer
+</code></pre>
+</div>
 
 <h3 id="add-the-laravel-command">Add the laravel command</h3>
 
 <p>Once composer is intalled we can easily install the laravel with the folowing:</p>
 
-<p><code class="highlighter-rouge">
-composer global require "laravel/installer=~1.1"
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>composer global require "laravel/installer=~1.1"
+</code></pre>
+</div>
 
 <h3 id="make-sure-laravel-command-is-in-our-system-path">Make sure laravel command is in our system path</h3>
 
-<p><code class="highlighter-rouge">
-subl .bash_profile
+<div class="highlighter-rouge"><pre class="highlight"><code>subl .bash_profile
 PATH="~/.composer/vendor/bin:$PATH"
-</code></p>
+</code></pre>
+</div>
 
 <h3 id="whats-next">What’s next?</h3>
 <p>So after those are installed we no longer need to install or start up composer or laravel command anymore. They now belong to our system and can just run them whenever we need.</p>
@@ -150,46 +150,46 @@ PATH="~/.composer/vendor/bin:$PATH"
 
 <p>To start a laravel</p>
 
-<p><code class="highlighter-rouge">
-$ laravel new blog
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ laravel new blog
+</code></pre>
+</div>
 
 <p>Or alternatively you can run:</p>
 
-<p><code class="highlighter-rouge">
-$ composer create-project laravel/laravel blog --prefer-dist
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ composer create-project laravel/laravel blog --prefer-dist
+</code></pre>
+</div>
 
 <h3 id="start-the-laravel-server">Start the laravel server</h3>
 
-<p><code class="highlighter-rouge">
-$ php artisan serve
-</code>
-Now you are enter <code class="highlighter-rouge">http://localhost:8000</code> into your browswer and see the laravel 5 welcome screen. So you can continue to develop 
+<div class="highlighter-rouge"><pre class="highlight"><code>$ php artisan serve
+</code></pre>
+</div>
+<p>Now you are enter <code class="highlighter-rouge">http://localhost:8000</code> into your browswer and see the laravel 5 welcome screen. So you can continue to develop 
 using the artisan server for your development. You would still need to install mysql for any database usage. For my example I have what is called a virtual box where I can have a hosted development environment.</p>
 
 <h3 id="routes">Routes</h3>
 
 <p>Routes control the what url entered in the browser displays what information. Below we are just returning a string in the browser.</p>
 
-<p><code class="highlighter-rouge">
-Route::get('/test', function() {
+<div class="highlighter-rouge"><pre class="highlight"><code>Route::get('/test', function() {
     return 'something here';
 });
-</code></p>
+</code></pre>
+</div>
 
 <p>We really won’t be returning strings in our browser so lets point this route to a controller that can handle our views.</p>
 
-<p><code class="highlighter-rouge">
-Route::get('/hello', 'WelcomeController@hello');
-</code>
-#### Controllers</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>Route::get('/hello', 'WelcomeController@hello');
+</code></pre>
+</div>
+<p>#### Controllers</p>
 
 <p>Create a blank controller with the following command.</p>
 
-<p><code class="highlighter-rouge">
-$ php artisan make:controller WelcomeController --plain
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ php artisan make:controller WelcomeController --plain
+</code></pre>
+</div>
 
 <h2 id="views">Views</h2>
 
@@ -197,9 +197,9 @@ $ php artisan make:controller WelcomeController --plain
 
 <h2 id="migration">Migration</h2>
 
-<p><code class="highlighter-rouge">
-php artisan migrate:make create_posts_table --create=posts
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>php artisan migrate:make create_posts_table --create=posts
+</code></pre>
+</div>
 
 								
 								

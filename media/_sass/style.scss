@@ -135,9 +135,12 @@ html {
 	letter-spacing: 1px;
 
 	img {
-		float: left;
 		margin: 0px 8px 8px 0px;
 	}
+
+    .img-thumbnail {
+        float: left;
+    }
 
 	a {
 		color: #22608c;

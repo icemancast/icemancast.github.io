@@ -5913,8 +5913,9 @@ html {
   min-height: 275px;
   letter-spacing: 1px; }
   .post img {
-    float: left;
     margin: 0px 8px 8px 0px; }
+  .post .img-thumbnail {
+    float: left; }
   .post a {
     color: #22608c;
     text-decoration: underline; }

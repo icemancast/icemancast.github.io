@@ -1,12 +1,11 @@
 title: Isaac Castillo Blog. Also View some of my work :)
 email: icemancast@gmail.com
-description: > # I have been doing design, web design and web development work for over
-  10 years. I enjoy writing, creating and debugging code. I get a
-  satisfaction when all the pieces of a development project come together.
-  I have worked with various technologies and languages; Kohana framework,
-  PHP, MySQL, CSS, Sass, Capistrano, Git and Wordpress just to name a few.
-  My current lamp development environment is Laravel (php MVC framework) on a
-  vagrant virtual box.
+description: > # I have been doing design and web application development work for over
+  15 years. I enjoy solving hard problems with code and have worked with various
+  frameworks/libraries and languages; Kohana framework, PHP, MySQL, CSS, Sass,
+  Capistrano, Git, Jquery, Emberjs and Wordpress just to name a few. My current
+  framework development is Laravel, Reactjs and Wordpress. I am also in the process
+  of releasing my first iOS application for a client written solely in React Native.
 source: . # Where is source code
 destination: ./_site # Where to compile
 plugins_dir: ./_plugins

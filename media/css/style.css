@@ -5898,7 +5898,8 @@ html {
   border-radius: 0px; }
 
 .content {
-  color: #464646; }
+  color: #464646;
+  font-size: 16px; }
   .content a {
     color: #22608c;
     text-decoration: underline; }

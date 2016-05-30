@@ -3,11 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Isaac Castillo Blog. Also View some of my work :)</title>
+	<title>Space-Between and a Work Elevator</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Isaac Castillo">
-	<meta name="description" content="15 years. I enjoy solving hard problems with code and have worked with various frameworks/libraries and languages; Kohana framework, PHP, MySQL, CSS, Sass, Capistrano, Git, Jquery, Emberjs and Wordpress just to name a few. My current framework development is Laravel, Reactjs and Wordpress. I am also in the process of releasing my first iOS application for a client written solely in React Native.
-">
+	<meta name="description" content="I recently have been working on a new React Native project for a client. React Native is a great library to be working with and all the design and layout aspects are created with CSS’ new flexbox property.">
 
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
@@ -68,16 +67,16 @@
 
 	<div class="container-fluid">
 
-	  	<h1 class="name visible-md visible-lg"><a href="/">Isaac Castillo</a></h1>
-	  	<h2 class="position-title visible-md visible-lg">Web Application Developer</h2>
+		<h1 class="name visible-md visible-lg"><a href="/">Isaac Castillo</a></h1>
+		<h2 class="position-title visible-md visible-lg">Web Application Developer</h2>
 
 			<div class="row">
-
+				
 				<div class="col-md-4 nav-area visible-md visible-lg">
-					<div class="bio-image">
-						<img src="/media/images/isaac.jpg" class="img-rounded img-responsive" />
-						<ul class="nav nav-pills nav-stacked bio-nav">
-							<li class="icon-email"><a href="mailto:icemancast@gmail.com" data-toggle-tooltip="tooltip" title="icemancast@gmail">Email</a></li>
+	<div class="bio-image">
+		<img src="/media/images/isaac.jpg" class="img-rounded img-responsive" />
+		<ul class="nav nav-pills nav-stacked bio-nav">
+			<li class="icon-email"><a href="mailto:icemancast@gmail.com" data-toggle-tooltip="tooltip" title="icemancast@gmail">Email</a></li>
 <li class="icon-phone"><a data-toggle="modal" data-toggle-tooltip="tooltip" href="#my-digits" title="(210) 595-0499">Phone</a></li>
 <li class="icon-github"><a href="https://github.com/icemancast" data-toggle-tooltip="tooltip" title="/icemancast">Github</a></li>
 <li class="icon-linkedin"><a href="http://www.linkedin.com/profile/view?id=18871848" data-toggle-tooltip="tooltip" title="Linkedin">Linkedin</a></li>
@@ -85,33 +84,67 @@
 <li class="icon-twitter"><a href="https://twitter.com/icemancast" data-toggle-tooltip="tooltip" title="@icemancast">Twitter</a></li>
 <li class="icon-me"><a href="/about" data-toggle-tooltip="tooltip" title="About Me">About Me</a></li>
 
-						</ul>
-					</div>
-					<div class="clearfix"></div>
-					<nav>
-						<ul class="nav nav-pills nav-stacked main-nav">
-							<li><a href="http://gettingstarted.tv">My Courses</a></li>
+		</ul>
+	</div>
+	<div class="clearfix"></div>
+	<nav>
+		<ul class="nav nav-pills nav-stacked main-nav">
+			<li><a href="http://gettingstarted.tv">My Courses</a></li>
 <li><a href="https://www.youtube.com/user/icemancast/videos">My Tutorials</a></li>
 <li><a href="http://echods.com">My Business</a></li>
 <li><a href="/resume/">Resume</a></li>
 
-						</ul>
-					</nav>
-				</div>
+		</ul>
+	</nav>
+</div>
 
 				<div class="col-md-8 col-md-offset-4">
 
-					<div role="main" class="content">
-						<h2>About Me</h2>
-						<p>I have been doing design and web application development work for over 15 years. I enjoy solving hard problems with code. Yeah it makes me beat my forehead against the screen but after doing so I come across wonderful solutions. I have worked with various frameworks/libraries and languages; Kohana framework, PHP, MySQL, CSS, Sass, Capistrano, Git, Jquery, Emberjs and Wordpress just to name a few. My current lamp development environment is Laravel (php MVC framework) and Wordpress on a vagrant virtual box.
-</p>
+					<div role="main" class="content post-margin">
+						<div class="post">
+							<h2>Space-Between and a Work Elevator</h2>
+							<p>
+								<img src="/media/images/posts/css.jpg" class="img-responsive img-thumbnail" width="225" class="left">
+								<div class="clearfix hidden-md hidden-lg"></div>
+								<p>I recently have been working on a new React Native project for a client. React Native is a great library to be working with and all the design and layout aspects are created with CSS’ new flexbox property.</p>
 
-<p><a href="/resume">View my resume</a></p>
-					</div>
-				
+<p>I have been using CSS for years but have yet to play with flexbox in the web space. Now messing around with it in React Native has been a blast. However, one item in flexbox that always confuses me was the space-between and space-around values. When I see them now I totally get it but it wasn’t until I was trapped in an elevator trapped like a sardine. Next time you are in an elevator notice this behavior that we all have when one person enters or exits the elevator. Every time someone would enter or exit the elevator all the bodies shift around creating an equal amount of space from each other. No one wants to be next to that guy. This is space-between. An equal amount of space between all objects not including the walls of the elevator.</p>
+
+<p>If we included the walls of the elevator in this, like pretend they were covered with reactive green ooze and you would mutate into a ninja turtle. I actually wouldn’t mind touching it just fyi. So as the ooze is doing it’s oozing thing you  create an equal amount of space between the walls of the elevator and the objects around you. This would be considered space-around. No one really knows if you would turn into a turtle anyway you could end up like Bebop and Rocksteady. So space-around would be an equal amount of space between the container and the objects within.</p>
+
+<p>So on your next elevator ride pay attention to how people shift around as people enter or exit the elevator think flex: space-between or flex: space-around.</p>
+
+<p>Also side note: You do not want to be stuck in an elevator with me. I go into survival mode in 2 seconds flat. I got stuck in an elevatory for 3 hours (7 minutes) and already had marked my territory, started a fire and was looking at the lunch (person) next to me.</p>
+
+								
+								
+							</p>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<div id="disqus_thread"></div>
+						<script>
+							var disqus_config = function () {
+								this.page.url = 'http://icemancast.com'; // Replace PAGE_URL with your page's canonical URL variable
+								this.page.identifier = '/2016/05/30/space-between-and-a-work-elevator'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+							(function() { // DON'T EDIT BELOW THIS LINE
+								var d = document, s = d.createElement('script');
+
+								s.src = '//icemancast.disqus.com/embed.js';
+
+								s.setAttribute('data-timestamp', +new Date());
+									(d.head || d.body).appendChild(s);
+							})();
+						</script>
+						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+					</div>				
 				</div>
 
 			</div>
+
+		<div class="clearfix"></div>
 
 		<footer>&copy; 2016 Isaac Castillo | built with: <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, <a href="http://sass-lang.com/">Sass</a>. Hosted on <a href="https://github.com/">Github</a>.</footer>
 
@@ -146,6 +179,6 @@
 	    })
 		})();
 	</script>
-	
+	<script id="dsq-count-scr" src="//icemancast.disqus.com/count.js" async></script>
 </body>
 </html>

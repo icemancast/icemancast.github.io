@@ -1,0 +1,22 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Application Information - Isaac Castillo - icemancast.com</title>
+    <description>I have been doing design and web application development work for over 15 years. I enjoy solving hard problems with code and have worked with various frameworks/libraries and languages; Kohana framework, PHP, MySQL, CSS, Sass, Capistrano, Git, Jquery, Emberjs and Wordpress just to name a few. My current framework development is Laravel, Reactjs and Wordpress.</description>
+    <link>{{ site.url }}</link>
+    {% for post in site.posts %}
+      {% unless post.draft %}
+        <item>
+          <title>{{ post.title | xml_escape }}</title>
+          <description>{{ post.content | xml_escape }}</description>
+          <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+          <link>{{ post.url | prepend: site.url }}</link>
+          <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
+        </item>
+      {% endunless %}
+    {% endfor %}
+  </channel>
+</rss>

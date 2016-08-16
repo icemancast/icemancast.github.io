@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Application Information - Isaac Castillo - icemancast.com</title>
+    <description>I have been doing design and web application development work for over 15 years. I enjoy solving hard problems with code and have worked with various frameworks/libraries and languages; Kohana framework, PHP, MySQL, CSS, Sass, Capistrano, Git, Jquery, Emberjs and Wordpress just to name a few. My current framework development is Laravel, Reactjs and Wordpress.</description>
+    <link>http://icemancast.com</link>
+    
+      
+        <item>
+          <title>Space-Between and a Work Elevator</title>
+          <description>&lt;p&gt;I recently have been working on a new React Native project for a client. React Native is a great library to be working with and all the design and layout aspects are created with CSS’ new flexbox property.&lt;/p&gt;
+
+&lt;p&gt;I have been using CSS for years but have yet to play with flexbox in the web space. Now messing around with it in React Native has been a blast. However, one item in flexbox that always confuses me was the space-between and space-around values. When I see them now I totally get it but it wasn’t until I was trapped in an elevator trapped like a sardine. Next time you are in an elevator notice this behavior that we all have when one person enters or exits the elevator. Every time someone would enter or exit the elevator all the bodies shift around creating an equal amount of space from each other. No one wants to be next to that guy. This is space-between. An equal amount of space between all objects not including the walls of the elevator.&lt;/p&gt;
+
+&lt;p&gt;If we included the walls of the elevator in this, like pretend they were covered with reactive green ooze and you would mutate into a ninja turtle. I actually wouldn’t mind touching it just fyi. So as the ooze is doing it’s oozing thing you  create an equal amount of space between the walls of the elevator and the objects around you. This would be considered space-around. No one really knows if you would turn into a turtle anyway you could end up like Bebop and Rocksteady. So space-around would be an equal amount of space between the container and the objects within.&lt;/p&gt;
+
+&lt;p&gt;So on your next elevator ride pay attention to how people shift around as people enter or exit the elevator think flex: space-between or flex: space-around.&lt;/p&gt;
+
+&lt;p&gt;Also side note: You do not want to be stuck in an elevator with me. I go into survival mode in 2 seconds flat. I got stuck in an elevatory for 3 hours (7 minutes) and already had marked my territory, started a fire and was looking at the lunch (person) next to me.&lt;/p&gt;
+</description>
+          <pubDate>2016-05-30T00:00:00-05:00</pubDate>
+          <link>http://icemancast.com/2016/05/30/space-between-and-a-work-elevator/</link>
+          <guid isPermaLink="true">http://icemancast.com/2016/05/30/space-between-and-a-work-elevator/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Lonestar PHP Conference Thoughts</title>
+          <description>&lt;h2 id=&quot;the-lowdown&quot;&gt;The Lowdown&lt;/h2&gt;
+&lt;p&gt;I got the opportunity to hang with fellow devs at the Lonestar PHP conference in Dallas, TX. How could I not like it, I drink Lonestars ;). Thank you &lt;a href=&quot;https://artisanscollaborative.com&quot;&gt;Artisans Collaborative&lt;/a&gt; for sponsoring me, the new shirt is great! It was a quick 2-3 day conference that was different than any other conference I have been too. I got to hear from brilliant developers and see what are some new things coming to our field. I think the most interesting fact about the conference was the size of it. It was not a large conference and was split apart by only 5 large rooms for all the talks. But the best part about this was that every speaker was very approachable and along with the conference very down to earth. There was a sense of great community and you feel like you are among friends in a safe learning environment. Heck I got to take a pic with Taylor Otwell.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/media/images/taylor-otwell.jpg&quot; alt=&quot;Pic with Taylor Otwell&quot; title=&quot;Taylor Otwell&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;chris&quot;&gt;Chris&lt;/h2&gt;
+&lt;p&gt;Met another developer let’s call him Chris. I am only calling him Chris because I don’t know his last name so it’s not to hide is identity in any way. He shared the same feeling about the conference having been back several years in a row. &lt;em&gt;“The feeling I get when I come back is that we are friends that just pickup where we left off. I come back every year”&lt;/em&gt;. I think I got that quote pretty close but can’t tell because we had both been drinking &lt;a href=&quot;https://twitter.com/OmnisBrews&quot;&gt;Omni’s Brew&lt;/a&gt; beer that was supplied at the conference. Oh my goodness was that delicious! Had the &lt;a href=&quot;https://twitter.com/OmnisBrews/status/718928494407720960&quot;&gt;Spaceship Opertator&lt;/a&gt; most of the night.&lt;/p&gt;
+
+&lt;h2 id=&quot;going-back&quot;&gt;Going back&lt;/h2&gt;
+&lt;p&gt;So overall the conference was a great way to meet new friends, hang out and learn some crunch time information about the new tools to put in my arsenal. Will definitely be back to hang out 😃&lt;/p&gt;
+
+&lt;h2 id=&quot;techy-stuff&quot;&gt;Techy stuff&lt;/h2&gt;
+&lt;p&gt;So here are the list of tech items that I am currently reading up on, youtube videos and the like:&lt;/p&gt;
+
+&lt;h3 id=&quot;redis&quot;&gt;Redis&lt;/h3&gt;
+&lt;p&gt;Using redis.io as a service to offload application with messages. Why have I not been using this??!!&lt;/p&gt;
+
+&lt;h3 id=&quot;graphql&quot;&gt;GraphQL&lt;/h3&gt;
+&lt;p&gt;GraphQL as a sql language. Very neat to play with and would go well with the react native project I am currently working on.&lt;/p&gt;
+
+&lt;h3 id=&quot;wordpress-api&quot;&gt;Wordpress API&lt;/h3&gt;
+&lt;p&gt;Wordpress’ new api endpoint &lt;a href=&quot;http://v2.wp-api.org&quot;&gt;http://v2.wp-api.org&lt;/a&gt;. I am not going to lie, kind of excited about this. Imagine creating a better front end for this?&lt;/p&gt;
+
+&lt;h3 id=&quot;mysql-tuner&quot;&gt;MySql Tuner&lt;/h3&gt;
+&lt;p&gt;Perl script mysql tuner. Way to better optimize your Mysql, a DBA suggested this. That is enough for me to trust it.&lt;/p&gt;
+
+&lt;h3 id=&quot;semver&quot;&gt;Semver&lt;/h3&gt;
+&lt;p&gt;Breaking.New-Features.Bug-Fix &lt;a href=&quot;http://semver.org&quot;&gt;semver.org&lt;/a&gt;. So confession, I don’t version well, I use github versioning all the time. I just don’t call my version names very well. That small example shown here and at the conference was a &lt;strong&gt;mind blown&lt;/strong&gt; for me.&lt;/p&gt;
+
+&lt;h3 id=&quot;unit-testing&quot;&gt;Unit Testing&lt;/h3&gt;
+&lt;p&gt;Unit testing with Katas. Uhhhhmmm duh! Why haven’t I tried this!&lt;/p&gt;
+
+&lt;h3 id=&quot;docker&quot;&gt;Docker&lt;/h3&gt;
+&lt;p&gt;Looking more into Docker. So I manage my own development and deployment environment with Vagrant and Ansible. But woah the stuff I have seen with docker is AMAZING! Already have been reading up on the docs and testing a local docker environment. Ask me how it’s going in the future.&lt;/p&gt;
+
+&lt;h3 id=&quot;continous-integration&quot;&gt;Continous Integration&lt;/h3&gt;
+&lt;p&gt;Continous integration. Another confession on something I haven’t quite wrapped my head around but looking forward to learning more on it. I have heard the term thrown around but never really took the time to learn it well.&lt;/p&gt;
+
+&lt;p&gt;There were so many talks and of course some talks were at the same time as others so it was hard to cover them all but going to be looking through the slides that were posted here: &lt;a href=&quot;https://joind.in/event/lone-star-php-2016&quot;&gt;Joind In Schedule&lt;/a&gt;&lt;/p&gt;
+</description>
+          <pubDate>2016-04-16T00:00:00-05:00</pubDate>
+          <link>http://icemancast.com/2016/04/16/lonestar-php-conference-thoughts/</link>
+          <guid isPermaLink="true">http://icemancast.com/2016/04/16/lonestar-php-conference-thoughts/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Echo Design Solutions - Laravel Backend</title>
+          <description>&lt;p&gt;I needed a foundation that we could build on to manage our clients and projects more effectively. This stack is Laravel 5.2, Mysql and used github hooks to deploy to our digital ocean server. Created user roles and permissions to help manage the different members that will be accessing this for updates.&lt;/p&gt;
+</description>
+          <pubDate>2016-04-04T00:00:00-05:00</pubDate>
+          <link>http://icemancast.com/2016/04/04/echo-design-solutions-laravel-backend/</link>
+          <guid isPermaLink="true">http://icemancast.com/2016/04/04/echo-design-solutions-laravel-backend/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Getting Started with Laravel Homestead</title>
+          <description>&lt;p&gt;Laravel Homestead is Laravel’s virtual machine setup that can run an entire laravel site setup. Not only that but in this video you can also see that you can add multiple local sites to install. I have been developing my own virtual machine with ansible that I maintain and keep up with for all my dev projects before homestead came about. Reading over the documention for homestead and filling in the the gaps from my own virtual machine experience, I recorded a video showing how to install
+Laravel Homestead. &lt;a href=&quot;https://www.youtube.com/watch?v=NcIPANwBghU&quot;&gt;Watch the Laravel Homestead video&lt;/a&gt;
+and leave me a comment below.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-notes-from-the-video&quot;&gt;My notes from the video&lt;/h2&gt;
+
+&lt;p&gt;The instructions below are for installing homestead on a mac machine. Most of these may cary over to a pc but there may be some different inputs that are better covered on the Laravel Docs for homestead.&lt;/p&gt;
+
+&lt;p&gt;First make sure you install vagrant and virtual box. After that run the following. Note it may take a while since you will be downloading the box to your computer.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-a-virtual-machine&quot;&gt;Why a virtual machine&lt;/h2&gt;
+
+&lt;p&gt;A virtual machine gives you the ability to be as close as you can to the actual production environment. Not only that but because it is so cheap/easy to spin up a virtual machine that if the box breaks you can either provision it or start a new one easily.&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+
+&lt;h3 id=&quot;subl-command&quot;&gt;Subl command&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ln -s &quot;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&quot; /usr/local/bin/subl
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;composer&quot;&gt;Composer&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;sequel-pro&quot;&gt;Sequel Pro&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.sequelpro.com/&quot;&gt;Download sequel pro&lt;/a&gt;. It’s a great tool for mysql administration.&lt;/p&gt;
+
+&lt;h3 id=&quot;ssh-keys&quot;&gt;SSH Keys&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/generating-ssh-keys/&quot;&gt;Generate your SSH Keys&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;vagrant-and-virtualbox-which-you-can-install-with-the-following&quot;&gt;Vagrant and Virtualbox which you can install with the following:&lt;/h2&gt;
+
+&lt;h3 id=&quot;install-homebrew&quot;&gt;Install homebrew&lt;/h3&gt;
+
+&lt;p&gt;Homebrew allows you to install other applications easily at the command line.&lt;/p&gt;
+
+&lt;p&gt;ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”&lt;/p&gt;
+
+&lt;h3 id=&quot;install-cask&quot;&gt;Install Cask&lt;/h3&gt;
+
+&lt;p&gt;This allows you to install Cask which helps with install Mac Applications.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install caskroom/cask/brew-cask
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;install-vagrant-and-virtualbox&quot;&gt;Install Vagrant and Virtualbox&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew cask install vagrant
+brew cask install virtualbox
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;installing-homestead&quot;&gt;Installing homestead&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~
+$ vagrant box add laravel/homestead
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Next we need to install the homestead recipe for our server. The yaml file that gets installed will help you manage your own local domains.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://github.com/laravel/homestead.git vagrant-homestead Next run the initialization script for homestead
+
+$ cd vagrant-homestead
+$ bash init.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Open the following file in your favor editor:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/Users/(yourUser)/.homestead/Homestead.yml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I modified the folders to have “nfs” type because I noticed a better performance with the tie to my local folder. So my yaml file looks like below&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;folders:
+    - map: ~/Sites
+      to: /home/vagrant/Code
+      type: &quot;nfs&quot;
+
+sites
+    - map: homestead.app
+      to: /home/vagrant/Code/homestead.app/public
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I left my ssh keys alone since they are same ones I use for most stuff. so yours should be:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/.ssh/id_rsa.pub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you have not setup your ssh keys just yet you should now. Here are the instructions to do so. &lt;a href=&quot;https://help.github.com/articles/generating-ssh-keys/&quot;&gt;Setup SSH Keys&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;run-vagrant-up&quot;&gt;Run vagrant up&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ~
+vagrant up
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;edit-your-local-vhost&quot;&gt;Edit your local vhost&lt;/h2&gt;
+
+&lt;p&gt;Edit your hosts file in your favorite editor.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo vi /etc/hosts
+192.168.10.10  homestead.app
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;install-a-laravel-site&quot;&gt;Install a laravel site&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ composer create-project --prefer-dist laravel/laravel homestead.app
+
+$ composer install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+          <pubDate>2016-01-17T00:00:00-06:00</pubDate>
+          <link>http://icemancast.com/2016/01/17/getting-started-with-laravel-homestead/</link>
+          <guid isPermaLink="true">http://icemancast.com/2016/01/17/getting-started-with-laravel-homestead/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Getting Started with CSS Animation</title>
+          <description>&lt;p&gt;I love animation ever since I was a kid. In the 3rd grade my brother and I would run home turn on the 3pm shows on TV and watch Tom &amp;amp; Jerry with our backpacks still on our backs. For some reason I have shied away from &lt;code class=&quot;highlighter-rouge&quot;&gt;CSS&lt;/code&gt; animation. I did do animation the in the days of Macromedia Flash, yes before they were bought out by Adobe. I even picked up Real Media animation library for a quick month or so. Have you heard of that? Don’t worry no one has. My next weapon of choice has been javascript and jquery and have never really looked back. I have seen some css animation come about and thought to myself oh that would be cool but never really thought explore more till just recently. Think of the animation in css as I need to setup a sequence that will happen at 0% time is zero and 100% is when the animation should finish at some “x” amount of time. Then in another class you would call that animation setup and actually set what time. This was probably the frustrating part for me when it came to css animation. I couldn’t understand that the animation in &lt;code class=&quot;highlighter-rouge&quot;&gt;CSS&lt;/code&gt; was a two part setup. Below is what a keyframe setup would look like:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@keyframes whatever-name-i-choose {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    30% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The above &lt;code class=&quot;highlighter-rouge&quot;&gt;CSS&lt;/code&gt; code will setup keyframes at 0%, 30% and the 100% mark of whatever time I set when I call this animation. You can set whatever percentages in the animation you would like by just doing a different percentage. Transform translate3d(x, y, z) will position the object all the way to the right offscreen and at the end of the animation we remove it by putting everything at 0. So the next question is how do we call this animation? Below is how I would call it in a class.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.some-animation-name {
+    animation-duration: 0.75s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-name: whatever-name-i-choose;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The above will setup the class that needs to be animation while the @keyframes sets up the staged animation. Again took me a while to understand this was a 2 part setup which I believe kept me out of animation in &lt;code class=&quot;highlighter-rouge&quot;&gt;CSS&lt;/code&gt; for a bit. You can see the fiddle below if you would like to mess around with the animation more. As always don’t forget to read the documentation for this at: &lt;a href=&quot;http://www.w3schools.com/css/css3_animations.asp&quot;&gt;CSS Animate Docs&lt;/a&gt;. Also if you would like below is a keyframe stage setup and the mixin I made for Sass so I could just extend it whenever I needed for that particular animated property.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@keyframes position-from-right {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    30% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The mixin:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/* @var $direction animation, @var $time of animation*/
+@mixin animate-property($direction: position-from-left, $time: 0.75s) {
+    animation-duration: $time;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-name: $direction;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;See the end product:&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/icemancast/o1wj0cfx/4/embedded/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+</description>
+          <pubDate>2015-10-15T00:00:00-05:00</pubDate>
+          <link>http://icemancast.com/2015/10/15/css-animation/</link>
+          <guid isPermaLink="true">http://icemancast.com/2015/10/15/css-animation/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Getting Started with Laravel 5.1</title>
+          <description>&lt;p&gt;Laravel is a php mvc framework that has gained a lot of popularity in the php community. With laravel you can create custom applications and get up in running a shorter amount of time.&lt;/p&gt;
+
+&lt;p&gt;I was asked to speak at a local PHP Meetup. Even better yet I was asked to speak about Laravel. So I took advantage of this opportunity and wanted to introduce Laravel 5.1 to the community. I recorded the full meeting and in video and posted it on youtube. Below is also my guideline that you see in the video. Watch the &lt;a href=&quot;https://www.youtube.com/watch?v=B7FJV9KIn58&quot;&gt;Getting Started with Laravel 5.1&lt;/a&gt; [time: 1:12:00] video now!&lt;/p&gt;
+
+&lt;h3 id=&quot;mvc&quot;&gt;MVC&lt;/h3&gt;
+
+&lt;h3 id=&quot;installing-composer&quot;&gt;Installing composer&lt;/h3&gt;
+
+&lt;p&gt;Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx&quot;&gt;https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ curl -sS https://getcomposer.org/installer | php
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now you can run &lt;code class=&quot;highlighter-rouge&quot;&gt;php composer.par&lt;/code&gt; to install packages. Doing the below command you only need to run composer without php and &lt;code class=&quot;highlighter-rouge&quot;&gt;.phar&lt;/code&gt; part of the command. This moves our composer to our bin so can can just call &lt;code class=&quot;highlighter-rouge&quot;&gt;composer&lt;/code&gt; from now on.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ mv composer.phar /usr/local/bin/composer
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;add-the-laravel-command&quot;&gt;Add the laravel command&lt;/h3&gt;
+
+&lt;p&gt;Once composer is intalled we can easily install the laravel with the folowing:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;composer global require &quot;laravel/installer=~1.1&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;make-sure-laravel-command-is-in-our-system-path&quot;&gt;Make sure laravel command is in our system path&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;subl .bash_profile
+PATH=&quot;~/.composer/vendor/bin:$PATH&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h3&gt;
+&lt;p&gt;So after those are installed we no longer need to install or start up composer or laravel command anymore. They now belong to our system and can just run them whenever we need.&lt;/p&gt;
+
+&lt;h3 id=&quot;start-a-new-application&quot;&gt;Start a new application&lt;/h3&gt;
+
+&lt;p&gt;To start a laravel&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ laravel new blog
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Or alternatively you can run:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ composer create-project laravel/laravel blog --prefer-dist
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;start-the-laravel-server&quot;&gt;Start the laravel server&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ php artisan serve
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Now you are enter &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:8000&lt;/code&gt; into your browswer and see the laravel 5 welcome screen. So you can continue to develop 
+using the artisan server for your development. You would still need to install mysql for any database usage. For my example I have what is called a virtual box where I can have a hosted development environment.&lt;/p&gt;
+
+&lt;h3 id=&quot;routes&quot;&gt;Routes&lt;/h3&gt;
+
+&lt;p&gt;Routes control the what url entered in the browser displays what information. Below we are just returning a string in the browser.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Route::get(&#39;/test&#39;, function() {
+    return &#39;something here&#39;;
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We really won’t be returning strings in our browser so lets point this route to a controller that can handle our views.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Route::get(&#39;/hello&#39;, &#39;WelcomeController@hello&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;#### Controllers&lt;/p&gt;
+
+&lt;p&gt;Create a blank controller with the following command.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ php artisan make:controller WelcomeController --plain
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;views&quot;&gt;Views&lt;/h2&gt;
+
+&lt;p&gt;Blade templating basics&lt;/p&gt;
+
+&lt;h2 id=&quot;migration&quot;&gt;Migration&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;php artisan migrate:make create_posts_table --create=posts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+          <pubDate>2015-09-09T00:00:00-05:00</pubDate>
+          <link>http://icemancast.com/2015/09/09/getting-started-with-laravel-5.1/</link>
+          <guid isPermaLink="true">http://icemancast.com/2015/09/09/getting-started-with-laravel-5.1/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Laravel Resource Controller Diagram</title>
+          <description>&lt;p&gt;During a classroom lesson that I was giving my students I started whiteboarding
+how the resource controllers works inside of Laravel. Also how the http verbs map
+to each action/method inside of that controller. After working through it I had
+what looked like a great diagram to share with anyone and everyone. This diagram
+uses a posts controller like in a blog application for example.&lt;/p&gt;
+</description>
+          <pubDate>2015-01-27T00:00:00-06:00</pubDate>
+          <link>http://icemancast.com/2015/01/27/laravel-resource-controller-diagram/</link>
+          <guid isPermaLink="true">http://icemancast.com/2015/01/27/laravel-resource-controller-diagram/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Parallax Front End Layout</title>
+          <description>&lt;p&gt;A good designer friend of mine did an awesome job on the design of
+this front page while I worked on the front end code for it. It
+was my first time using parallax and after reading up on it I found
+the &lt;a href=&quot;http://markdalgleish.com/projects/stellar.js,&quot; title=&quot;Parallax&quot;&gt;Stellar&lt;/a&gt; package to be the
+easiest entrace for it. I wanted to keep the scrolling effect sublte
+but slick. I also did some jQuery work to make the nav sticky once
+you scrolled past it.&lt;/p&gt;
+</description>
+          <pubDate>2015-01-09T00:00:00-06:00</pubDate>
+          <link>http://icemancast.com/2015/01/09/parallax-front-end-layout/</link>
+          <guid isPermaLink="true">http://icemancast.com/2015/01/09/parallax-front-end-layout/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Install Wordpress On Virtual Vagrant Box Video</title>
+          <description>&lt;p&gt;I was asked by some of the students that I teach to give instructions on how I install wordpress on my local development box. I have a vagrant box machine that runs
+ubuntu 14 on it and that is provisioned by ansible. After messing around for a bit I was able to come up with a solution. Even better yet I did a quick 5ish minute
+video that walks you through the process. Enjoy&lt;/p&gt;
+</description>
+          <pubDate>2014-12-11T00:00:00-06:00</pubDate>
+          <link>http://icemancast.com/2014/12/11/install-wordpress-on-virtual-vagrant-box/</link>
+          <guid isPermaLink="true">http://icemancast.com/2014/12/11/install-wordpress-on-virtual-vagrant-box/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Install Rails on Ubuntu 14 Vagrant Virtual Box</title>
+          <description>&lt;p&gt;I wanted to install rails on my Ubuntu 14.04 vagrant virtual box just to keep it on a nice development environment and to keep it separate from my MacOSX environment. In all seriousness I think through it all I wanted some sort of bragging rights on something like this. The steps following are what I have compiled from the resources that I have read which are linked to below. Please let me know if you have any issues with the install so I can update this post. My Ubuntu environment was created with vagrant and ansible. If you would like the same setup you can get it here &lt;a href=&quot;https://bitbucket.org/echods/vagrant-dev-environment&quot;&gt;vagrant-nginx&lt;/a&gt;. Enjoy!&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;ssh into your vagrant box&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ vagrant ssh
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Update and install prerequisites&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ sudo apt-get install python-software-properties
+ $ sudo apt-get -y install curl git-core nodejs
+ $ sudo apt-get install gcc make libsqlite3-dev
+ $ sudo apt-get install libssl-dev libtool libxslt libksba openssl
+ $ sudo apt-get install libxslt-dev libxml2-dev libsqlite3-dev
+ $ sudo apt-get install postgresql postgresql-contrib
+ $ sudo apt-get install build-essential
+ $ sudo apt-get -y update
+ $ sudo apt-get upgrade
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;clone repo&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add path to bash&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ echo &#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39; &amp;gt;&amp;gt; ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add rbenv init to commands&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &amp;gt;&amp;gt; ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Reload shell with new bash profile updates&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ source ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Check if install, should print out rbenv function to terminal&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ type rbenv
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;install ruby-build so you can use rbenv install&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Check available ruby versions&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ rbenv install -l
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install ruby version. I installed latest :)&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rbenv install 2.1.2
+$ rbenv rehash
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;set global ruby version&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rbenv global 2.1.2
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install bundler and rake. If they are already installed just hit “N” so you don’t overwrite them. No need to overwrite it&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gem install rdoc
+$ gem install bundler
+$ gem install rake 
+$ rbenv rehash
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install rails&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gem install rails
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Reload shell with new bash profile updates&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ source ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go to sites directory and create new app&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd /vagrant/sites
+$ rails new test_app
+$ cd test_app
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run bundler&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bundle update
+$ bundle install
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Start rails server and designate port.&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rails s -p 5050
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go to rails app via your browser. Go to the ip address of your vagrant box and add the port number used above. See example url below:&lt;/p&gt;
+
+    &lt;p&gt;###http://192.168.77.77:5050&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Write some code :)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;View the resources I used to compile this below:&lt;/p&gt;
+
+</description>
+          <pubDate>2014-05-13T00:00:00-05:00</pubDate>
+          <link>http://icemancast.com/2014/05/13/install-rails-ubuntu-vagrant-virtual-box/</link>
+          <guid isPermaLink="true">http://icemancast.com/2014/05/13/install-rails-ubuntu-vagrant-virtual-box/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Laravel Return Json From URL Route</title>
+          <description>&lt;p&gt;I was asked what would be a good way to return json data from a url address.
+An example like visting url.com/posts.json would return acutal json data for
+a mobile application. In rails this is already built in each controller which
+is quite nice :). After doing some research and document reading I was able
+to come up with the following easy solution in Laravel that I was very happy
+with. Remember if you already have a post resource route place this json
+route above that one for this to work. If you have solution that is different
+than this one let me know, I would like this see it.&lt;/p&gt;
+
+&lt;p&gt;In your &lt;code class=&quot;highlighter-rouge&quot;&gt;routes.php&lt;/code&gt; file place the following route or what makes sense for your situation.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Create route for json file
+Route::get(&#39;/posts.json&#39;, &#39;PostsController@postToJson&#39;);
+...
+...
+// Regular route resource if you have one
+Route::resource(&#39;posts&#39;, &#39;PostsController&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In your &lt;code class=&quot;highlighter-rouge&quot;&gt;postsController.php&lt;/code&gt; file or any other controller add the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Create an action for the route
+public function postToJson()
+{
+  // Query here for json you want to return
+  $post = Post::all();
+
+  // Send to json response
+  return Response::json($post-&amp;gt;toArray(), 200);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Also below is a url to a gist of the code.&lt;/p&gt;
+
+</description>
+          <pubDate>2014-04-25T00:00:00-05:00</pubDate>
+          <link>http://icemancast.com/2014/04/25/laravel-return-json-url-route/</link>
+          <guid isPermaLink="true">http://icemancast.com/2014/04/25/laravel-return-json-url-route/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Taking Rails Tutorial Again</title>
+          <description>&lt;p&gt;So just last month I committed to helping teach a Ruby on Rails class.
+You have to understand that I started learning Ruby and Rails early this
+year (about January). I am following the idea that in order to grasp
+something really well then you have to teach it. For the Rails class we
+will be going through the &lt;a href=&quot;http://ruby.railstutorial.org/&quot;&gt;Ruby On Rails Tutorial by Michael
+Hartl&lt;/a&gt;. This was the tutorial that I
+started with at the beginning of the year but only made it to chapter 7
+then got too busy to continue. So making the commitment to teach has
+sealed my future to finishing this course. This time around I will not
+be copying and pasting but yet typing all script code by hand to commit
+most of it to memory. As far as my Ruby course I have 2 weeks to finish
+then will complete it :). The one out of many things that I want to pick
+up this time is test driven development. Wish me well in my journey!&lt;/p&gt;
+</description>
+          <pubDate>2013-12-11T00:00:00-06:00</pubDate>
+          <link>http://icemancast.com/2013/12/11/rails-tutorial-teaching-class/</link>
+          <guid isPermaLink="true">http://icemancast.com/2013/12/11/rails-tutorial-teaching-class/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>How to Fix ActiveModel::ForbiddenAttributesError with ActiveAdmin</title>
+          <description>&lt;p&gt;I came across an error on a rails project I am working on,
+ActiveModel::ForbiddenAttributesError. 
+Of course right away I hit up google to find an answer.
+Found out that there was a change from Rails 3 to Rails 4 please read
+the Strong Parameters Explained in the documentation below. After
+attempting their suggestions it still did not work for me till I found
+the article at stack overflow, which will soon be your go to if you
+begin programming. I was attempting the fix correctly but because it has
+Admin Admin you need to do that change in the admin controller. If you
+are not using Active Admin then just use the suggestions per the Rails
+Guide Docs.&lt;/p&gt;
+</description>
+          <pubDate>2013-11-11T00:00:00-06:00</pubDate>
+          <link>http://icemancast.com/2013/11/11/ActiveModel-Forbidden-AttributesError-Active-Admin/</link>
+          <guid isPermaLink="true">http://icemancast.com/2013/11/11/ActiveModel-Forbidden-AttributesError-Active-Admin/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Node.js Class at Geekdom</title>
+          <description>&lt;p&gt;I started a 3 week course on node.js. I never really thought to learn it
+before thinking it was framework like emberjs and I would not have any
+need for it. After the first class I think I changed my mind. “One stack
+to rule them; all the new applications in PayPal are now being built
+using Node.js.” as quoted by the article below. Our next class will be
+going over express which is a web application framework for node. After
+I have some cool stuff to show I will post it here. Having a blast :)&lt;/p&gt;
+</description>
+          <pubDate>2013-11-09T00:00:00-06:00</pubDate>
+          <link>http://icemancast.com/2013/11/09/nodejs-class/</link>
+          <guid isPermaLink="true">http://icemancast.com/2013/11/09/nodejs-class/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ruby Learning Online Class</title>
+          <description>&lt;p&gt;About 4 weeks ago I started an online Ruby course. At first when I
+purchased the course I didn’t think it was going to be intense. I
+thought here is another course that I can take when I have a chance to
+get to it. Right away the instructor IM me and hence started my roller
+coaster ride of learning, reading and doing paired programming via
+google hang out. Another plus to the course was that the instructor
+teaches all in vim. I’ve used vim before but not to this extent. Now I
+haven’t looked back for my IDE of choice. This has been updated via vim
+:). Visit the course below and take a look at my git repo of practices
+and assignments.&lt;/p&gt;
+</description>
+          <pubDate>2013-10-28T00:00:00-05:00</pubDate>
+          <link>http://icemancast.com/2013/10/28/ruby-learning-online-class/</link>
+          <guid isPermaLink="true">http://icemancast.com/2013/10/28/ruby-learning-online-class/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Discover Devtools</title>
+          <description>&lt;p&gt;I took a course to sharpen my Chrome developer tool skills. Makes developing and debugging faster.&lt;/p&gt;
+</description>
+          <pubDate>2013-07-11T00:00:00-05:00</pubDate>
+          <link>http://icemancast.com/2013/07/11/discover-devtools/</link>
+          <guid isPermaLink="true">http://icemancast.com/2013/07/11/discover-devtools/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Completed One Month Rails</title>
+          <description>&lt;p&gt;Completed a One Month Rails Course online below is my certificate and the app that was launched on Heroku.&lt;/p&gt;
+</description>
+          <pubDate>2013-07-09T00:00:00-05:00</pubDate>
+          <link>http://icemancast.com/2013/07/09/completed-one-month-rails/</link>
+          <guid isPermaLink="true">http://icemancast.com/2013/07/09/completed-one-month-rails/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>jQuery Slide Drawer Plugin</title>
+          <description>&lt;p&gt;The jQuery Slide Drawer code that I used for another project I moved into a plugin with settings available.&lt;/p&gt;
+</description>
+          <pubDate>2013-03-26T00:00:00-05:00</pubDate>
+          <link>http://icemancast.com/2013/03/26/jquery-slide-drawer-plugin/</link>
+          <guid isPermaLink="true">http://icemancast.com/2013/03/26/jquery-slide-drawer-plugin/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Completed Rails for Zombies Course</title>
+          <description>&lt;p&gt;Rails for zombie course completed from codeschool.com. A twitter type app for zombies to tweet to their zombie friends :) . It was a fun and interesting course. Zombies have feelings too.&lt;/p&gt;
+</description>
+          <pubDate>2013-02-09T00:00:00-06:00</pubDate>
+          <link>http://icemancast.com/2013/02/09/completed-rails-for-zombies-course/</link>
+          <guid isPermaLink="true">http://icemancast.com/2013/02/09/completed-rails-for-zombies-course/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>jQuery Slide Drawer &amp; Slideshow</title>
+          <description>&lt;p&gt;I worked on a project where I needed a “drawer” for additional nav but I did not want it to take up the bottom of the screen. I made this full screen jQuery slideshow with jQuery slide drawer. The slide drawer slides down after about 7 seconds. After it slides down it can toggle back and forth from full height to hidden.&lt;/p&gt;
+</description>
+          <pubDate>2012-12-15T00:00:00-06:00</pubDate>
+          <link>http://icemancast.com/2012/12/15/jquery-slide-drawer-slideshow/</link>
+          <guid isPermaLink="true">http://icemancast.com/2012/12/15/jquery-slide-drawer-slideshow/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>WordPress Shopping Cart Modified</title>
+          <description>&lt;p&gt;Found and modified shopping cart plugin for wordpress to work with client’s existing merchant account.&lt;/p&gt;
+</description>
+          <pubDate>2012-12-01T00:00:00-06:00</pubDate>
+          <link>http://icemancast.com/2012/12/01/wordpress-shopping-cart-modified/</link>
+          <guid isPermaLink="true">http://icemancast.com/2012/12/01/wordpress-shopping-cart-modified/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Proline Custom Shopping Cart</title>
+          <description>&lt;p&gt;The client needed a shopping cart with downloadable curriculum. The shopping cart process checkouts via paypal. A paypal notify script was created to receive a signal from paypal to verify payment then sends a confirmation email with the file download.&lt;/p&gt;
+</description>
+          <pubDate>2009-10-26T00:00:00-05:00</pubDate>
+          <link>http://icemancast.com/2009/10/26/proline-custom-shopping-cart/</link>
+          <guid isPermaLink="true">http://icemancast.com/2009/10/26/proline-custom-shopping-cart/</guid>
+        </item>
+      
+    
+  </channel>
+</rss>

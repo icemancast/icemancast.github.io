@@ -30,4 +30,6 @@ sitemap:
   - "/index.html"
 
 # Supported gems
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+  - jekyll-feed

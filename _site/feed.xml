@@ -3,7 +3,7 @@
   <channel>
     <title>Web Application Information - Isaac Castillo - icemancast.com</title>
     <description>I have been doing design and web application development work for over 15 years. I enjoy solving hard problems with code and have worked with various frameworks/libraries and languages; Kohana framework, PHP, MySQL, CSS, Sass, Capistrano, Git, Jquery, Emberjs and Wordpress just to name a few. My current framework development is Laravel, Reactjs and Wordpress.</description>
-    <link>http://icemancast.com</link>
+    <link>http://localhost:4000</link>
     
       
         <item>
@@ -19,8 +19,8 @@
 &lt;p&gt;Also side note: You do not want to be stuck in an elevator with me. I go into survival mode in 2 seconds flat. I got stuck in an elevatory for 3 hours (7 minutes) and already had marked my territory, started a fire and was looking at the lunch (person) next to me.&lt;/p&gt;
 </description>
           <pubDate>2016-05-30T00:00:00-05:00</pubDate>
-          <link>http://icemancast.com/2016/05/30/space-between-and-a-work-elevator/</link>
-          <guid isPermaLink="true">http://icemancast.com/2016/05/30/space-between-and-a-work-elevator/</guid>
+          <link>http://localhost:4000/2016/05/30/space-between-and-a-work-elevator/</link>
+          <guid isPermaLink="true">http://localhost:4000/2016/05/30/space-between-and-a-work-elevator/</guid>
         </item>
       
     
@@ -68,8 +68,8 @@
 &lt;p&gt;There were so many talks and of course some talks were at the same time as others so it was hard to cover them all but going to be looking through the slides that were posted here: &lt;a href=&quot;https://joind.in/event/lone-star-php-2016&quot;&gt;Joind In Schedule&lt;/a&gt;&lt;/p&gt;
 </description>
           <pubDate>2016-04-16T00:00:00-05:00</pubDate>
-          <link>http://icemancast.com/2016/04/16/lonestar-php-conference-thoughts/</link>
-          <guid isPermaLink="true">http://icemancast.com/2016/04/16/lonestar-php-conference-thoughts/</guid>
+          <link>http://localhost:4000/2016/04/16/lonestar-php-conference-thoughts/</link>
+          <guid isPermaLink="true">http://localhost:4000/2016/04/16/lonestar-php-conference-thoughts/</guid>
         </item>
       
     
@@ -79,8 +79,8 @@
           <description>&lt;p&gt;I needed a foundation that we could build on to manage our clients and projects more effectively. This stack is Laravel 5.2, Mysql and used github hooks to deploy to our digital ocean server. Created user roles and permissions to help manage the different members that will be accessing this for updates.&lt;/p&gt;
 </description>
           <pubDate>2016-04-04T00:00:00-05:00</pubDate>
-          <link>http://icemancast.com/2016/04/04/echo-design-solutions-laravel-backend/</link>
-          <guid isPermaLink="true">http://icemancast.com/2016/04/04/echo-design-solutions-laravel-backend/</guid>
+          <link>http://localhost:4000/2016/04/04/echo-design-solutions-laravel-backend/</link>
+          <guid isPermaLink="true">http://localhost:4000/2016/04/04/echo-design-solutions-laravel-backend/</guid>
         </item>
       
     
@@ -215,8 +215,8 @@ $ composer install
 &lt;/div&gt;
 </description>
           <pubDate>2016-01-17T00:00:00-06:00</pubDate>
-          <link>http://icemancast.com/2016/01/17/getting-started-with-laravel-homestead/</link>
-          <guid isPermaLink="true">http://icemancast.com/2016/01/17/getting-started-with-laravel-homestead/</guid>
+          <link>http://localhost:4000/2016/01/17/getting-started-with-laravel-homestead/</link>
+          <guid isPermaLink="true">http://localhost:4000/2016/01/17/getting-started-with-laravel-homestead/</guid>
         </item>
       
     
@@ -291,8 +291,8 @@ $ composer install
 &lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/icemancast/o1wj0cfx/4/embedded/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 </description>
           <pubDate>2015-10-15T00:00:00-05:00</pubDate>
-          <link>http://icemancast.com/2015/10/15/css-animation/</link>
-          <guid isPermaLink="true">http://icemancast.com/2015/10/15/css-animation/</guid>
+          <link>http://localhost:4000/2015/10/15/css-animation/</link>
+          <guid isPermaLink="true">http://localhost:4000/2015/10/15/css-animation/</guid>
         </item>
       
     
@@ -365,15 +365,15 @@ using the artisan server for your development. You would still need to install m
 
 &lt;p&gt;Routes control the what url entered in the browser displays what information. Below we are just returning a string in the browser.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Route::get(&#39;/test&#39;, function() {
-    return &#39;something here&#39;;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Route::get('/test', function() {
+    return 'something here';
 });
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;We really won’t be returning strings in our browser so lets point this route to a controller that can handle our views.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Route::get(&#39;/hello&#39;, &#39;WelcomeController@hello&#39;);
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Route::get('/hello', 'WelcomeController@hello');
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;#### Controllers&lt;/p&gt;
@@ -395,8 +395,8 @@ using the artisan server for your development. You would still need to install m
 &lt;/div&gt;
 </description>
           <pubDate>2015-09-09T00:00:00-05:00</pubDate>
-          <link>http://icemancast.com/2015/09/09/getting-started-with-laravel-5.1/</link>
-          <guid isPermaLink="true">http://icemancast.com/2015/09/09/getting-started-with-laravel-5.1/</guid>
+          <link>http://localhost:4000/2015/09/09/getting-started-with-laravel-5.1/</link>
+          <guid isPermaLink="true">http://localhost:4000/2015/09/09/getting-started-with-laravel-5.1/</guid>
         </item>
       
     
@@ -410,8 +410,8 @@ what looked like a great diagram to share with anyone and everyone. This diagram
 uses a posts controller like in a blog application for example.&lt;/p&gt;
 </description>
           <pubDate>2015-01-27T00:00:00-06:00</pubDate>
-          <link>http://icemancast.com/2015/01/27/laravel-resource-controller-diagram/</link>
-          <guid isPermaLink="true">http://icemancast.com/2015/01/27/laravel-resource-controller-diagram/</guid>
+          <link>http://localhost:4000/2015/01/27/laravel-resource-controller-diagram/</link>
+          <guid isPermaLink="true">http://localhost:4000/2015/01/27/laravel-resource-controller-diagram/</guid>
         </item>
       
     
@@ -427,8 +427,8 @@ but slick. I also did some jQuery work to make the nav sticky once
 you scrolled past it.&lt;/p&gt;
 </description>
           <pubDate>2015-01-09T00:00:00-06:00</pubDate>
-          <link>http://icemancast.com/2015/01/09/parallax-front-end-layout/</link>
-          <guid isPermaLink="true">http://icemancast.com/2015/01/09/parallax-front-end-layout/</guid>
+          <link>http://localhost:4000/2015/01/09/parallax-front-end-layout/</link>
+          <guid isPermaLink="true">http://localhost:4000/2015/01/09/parallax-front-end-layout/</guid>
         </item>
       
     
@@ -440,8 +440,8 @@ ubuntu 14 on it and that is provisioned by ansible. After messing around for a b
 video that walks you through the process. Enjoy&lt;/p&gt;
 </description>
           <pubDate>2014-12-11T00:00:00-06:00</pubDate>
-          <link>http://icemancast.com/2014/12/11/install-wordpress-on-virtual-vagrant-box/</link>
-          <guid isPermaLink="true">http://icemancast.com/2014/12/11/install-wordpress-on-virtual-vagrant-box/</guid>
+          <link>http://localhost:4000/2014/12/11/install-wordpress-on-virtual-vagrant-box/</link>
+          <guid isPermaLink="true">http://localhost:4000/2014/12/11/install-wordpress-on-virtual-vagrant-box/</guid>
         </item>
       
     
@@ -483,14 +483,14 @@ video that walks you through the process. Enjoy&lt;/p&gt;
   &lt;li&gt;
     &lt;p&gt;Add path to bash&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ echo &#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39; &amp;gt;&amp;gt; ~/.bashrc
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;' &amp;gt;&amp;gt; ~/.bashrc
 &lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Add rbenv init to commands&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &amp;gt;&amp;gt; ~/.bashrc
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ echo 'eval &quot;$(rbenv init -)&quot;' &amp;gt;&amp;gt; ~/.bashrc
 &lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
   &lt;/li&gt;
@@ -599,8 +599,8 @@ $ bundle install
 
 </description>
           <pubDate>2014-05-13T00:00:00-05:00</pubDate>
-          <link>http://icemancast.com/2014/05/13/install-rails-ubuntu-vagrant-virtual-box/</link>
-          <guid isPermaLink="true">http://icemancast.com/2014/05/13/install-rails-ubuntu-vagrant-virtual-box/</guid>
+          <link>http://localhost:4000/2014/05/13/install-rails-ubuntu-vagrant-virtual-box/</link>
+          <guid isPermaLink="true">http://localhost:4000/2014/05/13/install-rails-ubuntu-vagrant-virtual-box/</guid>
         </item>
       
     
@@ -619,11 +619,11 @@ than this one let me know, I would like this see it.&lt;/p&gt;
 &lt;p&gt;In your &lt;code class=&quot;highlighter-rouge&quot;&gt;routes.php&lt;/code&gt; file place the following route or what makes sense for your situation.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Create route for json file
-Route::get(&#39;/posts.json&#39;, &#39;PostsController@postToJson&#39;);
+Route::get('/posts.json', 'PostsController@postToJson');
 ...
 ...
 // Regular route resource if you have one
-Route::resource(&#39;posts&#39;, &#39;PostsController&#39;);
+Route::resource('posts', 'PostsController');
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -645,8 +645,8 @@ public function postToJson()
 
 </description>
           <pubDate>2014-04-25T00:00:00-05:00</pubDate>
-          <link>http://icemancast.com/2014/04/25/laravel-return-json-url-route/</link>
-          <guid isPermaLink="true">http://icemancast.com/2014/04/25/laravel-return-json-url-route/</guid>
+          <link>http://localhost:4000/2014/04/25/laravel-return-json-url-route/</link>
+          <guid isPermaLink="true">http://localhost:4000/2014/04/25/laravel-return-json-url-route/</guid>
         </item>
       
     
@@ -668,8 +668,8 @@ then will complete it :). The one out of many things that I want to pick
 up this time is test driven development. Wish me well in my journey!&lt;/p&gt;
 </description>
           <pubDate>2013-12-11T00:00:00-06:00</pubDate>
-          <link>http://icemancast.com/2013/12/11/rails-tutorial-teaching-class/</link>
-          <guid isPermaLink="true">http://icemancast.com/2013/12/11/rails-tutorial-teaching-class/</guid>
+          <link>http://localhost:4000/2013/12/11/rails-tutorial-teaching-class/</link>
+          <guid isPermaLink="true">http://localhost:4000/2013/12/11/rails-tutorial-teaching-class/</guid>
         </item>
       
     
@@ -689,8 +689,8 @@ are not using Active Admin then just use the suggestions per the Rails
 Guide Docs.&lt;/p&gt;
 </description>
           <pubDate>2013-11-11T00:00:00-06:00</pubDate>
-          <link>http://icemancast.com/2013/11/11/ActiveModel-Forbidden-AttributesError-Active-Admin/</link>
-          <guid isPermaLink="true">http://icemancast.com/2013/11/11/ActiveModel-Forbidden-AttributesError-Active-Admin/</guid>
+          <link>http://localhost:4000/2013/11/11/ActiveModel-Forbidden-AttributesError-Active-Admin/</link>
+          <guid isPermaLink="true">http://localhost:4000/2013/11/11/ActiveModel-Forbidden-AttributesError-Active-Admin/</guid>
         </item>
       
     
@@ -706,8 +706,8 @@ going over express which is a web application framework for node. After
 I have some cool stuff to show I will post it here. Having a blast :)&lt;/p&gt;
 </description>
           <pubDate>2013-11-09T00:00:00-06:00</pubDate>
-          <link>http://icemancast.com/2013/11/09/nodejs-class/</link>
-          <guid isPermaLink="true">http://icemancast.com/2013/11/09/nodejs-class/</guid>
+          <link>http://localhost:4000/2013/11/09/nodejs-class/</link>
+          <guid isPermaLink="true">http://localhost:4000/2013/11/09/nodejs-class/</guid>
         </item>
       
     
@@ -726,8 +726,8 @@ haven’t looked back for my IDE of choice. This has been updated via vim
 and assignments.&lt;/p&gt;
 </description>
           <pubDate>2013-10-28T00:00:00-05:00</pubDate>
-          <link>http://icemancast.com/2013/10/28/ruby-learning-online-class/</link>
-          <guid isPermaLink="true">http://icemancast.com/2013/10/28/ruby-learning-online-class/</guid>
+          <link>http://localhost:4000/2013/10/28/ruby-learning-online-class/</link>
+          <guid isPermaLink="true">http://localhost:4000/2013/10/28/ruby-learning-online-class/</guid>
         </item>
       
     
@@ -737,8 +737,8 @@ and assignments.&lt;/p&gt;
           <description>&lt;p&gt;I took a course to sharpen my Chrome developer tool skills. Makes developing and debugging faster.&lt;/p&gt;
 </description>
           <pubDate>2013-07-11T00:00:00-05:00</pubDate>
-          <link>http://icemancast.com/2013/07/11/discover-devtools/</link>
-          <guid isPermaLink="true">http://icemancast.com/2013/07/11/discover-devtools/</guid>
+          <link>http://localhost:4000/2013/07/11/discover-devtools/</link>
+          <guid isPermaLink="true">http://localhost:4000/2013/07/11/discover-devtools/</guid>
         </item>
       
     
@@ -748,8 +748,8 @@ and assignments.&lt;/p&gt;
           <description>&lt;p&gt;Completed a One Month Rails Course online below is my certificate and the app that was launched on Heroku.&lt;/p&gt;
 </description>
           <pubDate>2013-07-09T00:00:00-05:00</pubDate>
-          <link>http://icemancast.com/2013/07/09/completed-one-month-rails/</link>
-          <guid isPermaLink="true">http://icemancast.com/2013/07/09/completed-one-month-rails/</guid>
+          <link>http://localhost:4000/2013/07/09/completed-one-month-rails/</link>
+          <guid isPermaLink="true">http://localhost:4000/2013/07/09/completed-one-month-rails/</guid>
         </item>
       
     
@@ -759,8 +759,8 @@ and assignments.&lt;/p&gt;
           <description>&lt;p&gt;The jQuery Slide Drawer code that I used for another project I moved into a plugin with settings available.&lt;/p&gt;
 </description>
           <pubDate>2013-03-26T00:00:00-05:00</pubDate>
-          <link>http://icemancast.com/2013/03/26/jquery-slide-drawer-plugin/</link>
-          <guid isPermaLink="true">http://icemancast.com/2013/03/26/jquery-slide-drawer-plugin/</guid>
+          <link>http://localhost:4000/2013/03/26/jquery-slide-drawer-plugin/</link>
+          <guid isPermaLink="true">http://localhost:4000/2013/03/26/jquery-slide-drawer-plugin/</guid>
         </item>
       
     
@@ -770,8 +770,8 @@ and assignments.&lt;/p&gt;
           <description>&lt;p&gt;Rails for zombie course completed from codeschool.com. A twitter type app for zombies to tweet to their zombie friends :) . It was a fun and interesting course. Zombies have feelings too.&lt;/p&gt;
 </description>
           <pubDate>2013-02-09T00:00:00-06:00</pubDate>
-          <link>http://icemancast.com/2013/02/09/completed-rails-for-zombies-course/</link>
-          <guid isPermaLink="true">http://icemancast.com/2013/02/09/completed-rails-for-zombies-course/</guid>
+          <link>http://localhost:4000/2013/02/09/completed-rails-for-zombies-course/</link>
+          <guid isPermaLink="true">http://localhost:4000/2013/02/09/completed-rails-for-zombies-course/</guid>
         </item>
       
     
@@ -781,8 +781,8 @@ and assignments.&lt;/p&gt;
           <description>&lt;p&gt;I worked on a project where I needed a “drawer” for additional nav but I did not want it to take up the bottom of the screen. I made this full screen jQuery slideshow with jQuery slide drawer. The slide drawer slides down after about 7 seconds. After it slides down it can toggle back and forth from full height to hidden.&lt;/p&gt;
 </description>
           <pubDate>2012-12-15T00:00:00-06:00</pubDate>
-          <link>http://icemancast.com/2012/12/15/jquery-slide-drawer-slideshow/</link>
-          <guid isPermaLink="true">http://icemancast.com/2012/12/15/jquery-slide-drawer-slideshow/</guid>
+          <link>http://localhost:4000/2012/12/15/jquery-slide-drawer-slideshow/</link>
+          <guid isPermaLink="true">http://localhost:4000/2012/12/15/jquery-slide-drawer-slideshow/</guid>
         </item>
       
     
@@ -792,8 +792,8 @@ and assignments.&lt;/p&gt;
           <description>&lt;p&gt;Found and modified shopping cart plugin for wordpress to work with client’s existing merchant account.&lt;/p&gt;
 </description>
           <pubDate>2012-12-01T00:00:00-06:00</pubDate>
-          <link>http://icemancast.com/2012/12/01/wordpress-shopping-cart-modified/</link>
-          <guid isPermaLink="true">http://icemancast.com/2012/12/01/wordpress-shopping-cart-modified/</guid>
+          <link>http://localhost:4000/2012/12/01/wordpress-shopping-cart-modified/</link>
+          <guid isPermaLink="true">http://localhost:4000/2012/12/01/wordpress-shopping-cart-modified/</guid>
         </item>
       
     
@@ -803,8 +803,8 @@ and assignments.&lt;/p&gt;
           <description>&lt;p&gt;The client needed a shopping cart with downloadable curriculum. The shopping cart process checkouts via paypal. A paypal notify script was created to receive a signal from paypal to verify payment then sends a confirmation email with the file download.&lt;/p&gt;
 </description>
           <pubDate>2009-10-26T00:00:00-05:00</pubDate>
-          <link>http://icemancast.com/2009/10/26/proline-custom-shopping-cart/</link>
-          <guid isPermaLink="true">http://icemancast.com/2009/10/26/proline-custom-shopping-cart/</guid>
+          <link>http://localhost:4000/2009/10/26/proline-custom-shopping-cart/</link>
+          <guid isPermaLink="true">http://localhost:4000/2009/10/26/proline-custom-shopping-cart/</guid>
         </item>
       
     

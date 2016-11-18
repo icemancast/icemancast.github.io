@@ -2,73 +2,74 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>{{ site.title }}</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="{{ site.data.personal.owner_name }}">
-	<meta name="description" content="{{ site.description }}">
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="{{ site.data.personal.owner_name }}">
+    <meta name="description" content="{{ site.description }}">
+    {% feed_meta %}
 
-	<!--[if lt IE 9]>
-	<script src="js/html5shiv.js"></script>
-	<![endif]-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
 
-	<link href='http://fonts.googleapis.com/css?family=Rosario:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" media="all" href="/media/css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Rosario:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="all" href="/media/css/style.css" />
 </head>
 
 <body>
-	{% include analytics.html %}
-	{% include mobile-nav.html %}
+    {% include analytics.html %}
+    {% include mobile-nav.html %}
 
-	<div class="container-fluid">
+    <div class="container-fluid">
 
-	  	<h1 class="name visible-md visible-lg"><a href="/">{{ site.data.personal.owner_name }}</a></h1>
-	  	<h2 class="position-title visible-md visible-lg">{{ site.data.personal.position }}</h2>
+        <h1 class="name visible-md visible-lg"><a href="/">{{ site.data.personal.owner_name }}</a></h1>
+        <h2 class="position-title visible-md visible-lg">{{ site.data.personal.position }}</h2>
 
-			<div class="row">
+            <div class="row">
 
-				<div class="col-md-4 nav-area visible-md visible-lg">
-					<div class="bio-image">
-						<img src="/media/images/isaac.jpg" class="img-rounded img-responsive" />
-						<ul class="nav nav-pills nav-stacked bio-nav">
-							{% include bio-nav.html %}
-						</ul>
-					</div>
-					<div class="clearfix"></div>
-					<nav>
-						<ul class="nav nav-pills nav-stacked main-nav">
-							{% include nav.html %}
-						</ul>
-					</nav>
-				</div>
+                <div class="col-md-4 nav-area visible-md visible-lg">
+                    <div class="bio-image">
+                        <img src="/media/images/isaac.jpg" class="img-rounded img-responsive" />
+                        <ul class="nav nav-pills nav-stacked bio-nav">
+                            {% include bio-nav.html %}
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <nav>
+                        <ul class="nav nav-pills nav-stacked main-nav">
+                            {% include nav.html %}
+                        </ul>
+                    </nav>
+                </div>
 
-				<div class="col-md-8 col-md-offset-4">
+                <div class="col-md-8 col-md-offset-4">
 
-					<div role="main" class="content">
-						<h2>{{ page.title }}</h2>
-						{{ content }}
-					</div>
-				
-				</div>
+                    <div role="main" class="content">
+                        <h2>{{ page.title }}</h2>
+                        {{ content }}
+                    </div>
 
-			</div>
+                </div>
 
-		{% include footer.html %}
+            </div>
 
-		{% include modals.html %}
-	</div>
+        {% include footer.html %}
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="/vendor/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-	<script>
-		(function() {
-			$('.bio-nav').tooltip({
-	      selector: "[data-toggle-tooltip=tooltip]",
-	      container: '.nav',
-	      placement: 'right'
-	    })
-		})();
-	</script>
-	
+        {% include modals.html %}
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/vendor/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script>
+        (function() {
+            $('.bio-nav').tooltip({
+          selector: "[data-toggle-tooltip=tooltip]",
+          container: '.nav',
+          placement: 'right'
+        })
+        })();
+    </script>
+
 </body>
 </html>

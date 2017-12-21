@@ -1,0 +1,52 @@
+---
+layout: iframe
+title: SquadUp Test
+---
+<style>
+    .squadup-checkout-nav {
+        display: none !important;
+    }
+
+    .squadup-navigation-view-container {
+        margin: 0 !important;
+    }
+</style>
+<div id="squadup-checkout"></div>
+<link rel="stylesheet" href="https://s3.amazonaws.com/checkout.squadup.com/default/css/bootstrap-namespace.min.css">
+<script>
+
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var id = url.searchParams.get("id");
+
+    squadup = {
+        image: 'https://static1.squarespace.com/static/57db3bf82994ca0f0c8fe90c/t/58f02d4bf5e231091c3fc95f/1492135250822/Asset+4.png',
+        root: 'squadup-checkout',
+        eventId: id,
+        userId: [3430],
+        collapseTicketDescription: true,
+        shoppingCartEnabled: true,
+        paypalEnabled: false
+    }
+
+    // document.addEventListener("orderSuccessful", function (e) {
+    //     var orderData = e.detail;
+    //   var details = 'Your order(s): ';
+    //   orderData.items.forEach(function(detail) {
+    //       details += '#' + detail.order_id + ' - ' + detail.event.name;
+    //   });
+    //   alert(details);
+    // }, false);
+
+    // document.addEventListener("shoppingCartUpdated", function (e) {
+    //   var shoppingCartData = e.detail;
+    //   console.log(shoppingCartData);
+    // }, false);
+
+    // var newCheckout = $('#shopping-cart');
+    // var modalCheckout = $('#squadup-checkout');
+
+    // newCheckout.html(modalCheckout);
+
+</script>
+<script src="https://s3.amazonaws.com/checkoutstaging.squadup.com/main-v2.min.js"></script>

@@ -118,6 +118,8 @@
         paypalEnabled: false
     }
 
+    document.dispatchEvent(new CustomEvent('createSquadupEmbed'));
+
     document.addEventListener("orderSuccessful", function (e) {
       var orderData = e.detail;
       console.log(orderData);

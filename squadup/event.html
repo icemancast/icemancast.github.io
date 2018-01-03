@@ -8,7 +8,7 @@ title: SquadUp Test
     }
 
     .squadup-navigation-view-container {
-        margin: 0 !important;
+        margin: 0 auto !important;
     }
 </style>
 <div id="squadup-checkout"></div>
@@ -20,12 +20,12 @@ title: SquadUp Test
     var id = url.searchParams.get("id");
 
     squadup = {
-        image: 'https://static1.squarespace.com/static/57db3bf82994ca0f0c8fe90c/t/58f02d4bf5e231091c3fc95f/1492135250822/Asset+4.png',
         root: 'squadup-checkout',
         eventId: id,
         userId: [3430],
-        collapseTicketDescription: true,
         shoppingCartEnabled: true,
+        descriptionEnabled: true,
+        collapseTicketDescription: true,
         paypalEnabled: false
     }
 

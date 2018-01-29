@@ -18,6 +18,14 @@ title: SquadUp Test
         display: none;
     }
 
+    .squadup-checkout-nav {
+        display: none !important;
+    }
+
+    .squadup-navigation-view-container {
+        margin: 0 auto !important;
+    }
+
 </style>
 <link rel="stylesheet" href="https://s3.amazonaws.com/checkout.squadup.com/default/css/bootstrap-namespace.min.css">
 
@@ -30,7 +38,7 @@ title: SquadUp Test
     <p>We can change this description</p>
     <p>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ticketModal3084">
+        <button type="button" class="btn btn-primary btn-ticket-modal" data-event-id="3084">
           Launch demo modal
         </button>
     </p>
@@ -40,13 +48,13 @@ title: SquadUp Test
     <h2>Event 2</h2>
     <p>description here</p>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ticketModal3085">
+    <button type="button" class="btn btn-primary btn-ticket-modal" data-event-id="3085">
       Launch demo modal
     </button>
 </article>
 
 <!-- Modal -->
-<div class="modal fade" id="ticketModal3084" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document" style="width: 990px;">
     <div class="modal-content">
       <div class="modal-header">
@@ -54,7 +62,7 @@ title: SquadUp Test
         <h4 class="modal-title" id="myModalLabel">Some Title</h4>
       </div>
       <div class="modal-body" style="height: 800px">
-        <iframe width="992" height="800" src="http://icemancast.com/squadup/event/?id=3084" frameborder="0" allowfullscreen></iframe>
+        <div id="squadup-ticket"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -64,7 +72,7 @@ title: SquadUp Test
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="ticketModal3085" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document" style="width: 990px;">
     <div class="modal-content">
       <div class="modal-header">
@@ -79,7 +87,7 @@ title: SquadUp Test
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Checkout Modal -->
 <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -98,31 +106,3 @@ title: SquadUp Test
     </div>
   </div>
 </div>
-
-<script>
-    squadup = {
-    title: 'ReImagine Events',
-    image: 'https://static1.squarespace.com/static/57db3bf82994ca0f0c8fe90c/t/58f02d4bf5e231091c3fc95f/1492135250822/Asset+4.png',
-    root: 'squadup-checkout',
-    eventId: '3084',
-    userId: [3430],
-    collapseTicketDescription: true,
-    shoppingCartEnabled: true,
-    paypalEnabled: false,
-    showCheckout: true
-}
-</script>
-
-<script>
-
-    // squadup = {
-    //     root: 'squadup-checkout-main',
-    //     userId: [3430],
-    //     // eventId: 3085,
-    //     // collapseTicketDescription: true,
-    //     // shoppingCartEnabled: true,
-    //     // paypalEnabled: false,
-    //     showCheckout: true
-    // }
-</script>
-<script src="https://s3.amazonaws.com/checkoutstaging.squadup.com/main-v2.min.js"></script>

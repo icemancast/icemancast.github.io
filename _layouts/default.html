@@ -62,7 +62,35 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="/vendor/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
     <script>
-        (function() {
+
+        function loadScript(url, callback){
+
+            var script = document.createElement("script")
+            script.type = "text/javascript";
+
+            if (script.readyState){  //IE
+                script.onreadystatechange = function(){
+                    if (script.readyState == "loaded" ||
+                            script.readyState == "complete"){
+                        script.onreadystatechange = null;
+                        callback();
+                    }
+                };
+            } else {  //Others
+                script.onload = function(){
+                    callback();
+                };
+            }
+
+            script.src = url;
+            document.getElementsByTagName("head")[0].appendChild(script);
+        }
+
+        var eventId;
+
+        var scriptToLoad = 'https://s3.amazonaws.com/checkoutstaging.squadup.com/main-v2.min.js';
+
+        // (function() {
             $('.bio-nav').tooltip({
               selector: "[data-toggle-tooltip=tooltip]",
               container: '.nav',
@@ -70,9 +98,10 @@
             })
 
             $('.btn-ticket-modal').on('click', function(event) {
-                var eventId = $(this).data('event-id');
 
-                document.dispatchEvent(new CustomEvent('destroySquadupEmbed'));
+                eventId = $(this).data('event-id');
+
+                // document.dispatchEvent(new CustomEvent('destroySquadupEmbed'));
 
                 squadup = {
                     title: 'ReImagine Events',
@@ -86,22 +115,33 @@
                     showCheckout: false
                 }
 
-                document.dispatchEvent(new CustomEvent('createSquadupEmbed'));
+                loadScript(scriptToLoad, function(){
+                    console.log('script has loaded');
+                });
+
                 $('#ticketModal').modal('show')
             });
 
-            squadup = {
-                root: 'squadup-checkout',
-                userId: [3430],
-                shoppingCartEnabled: true,
-                paypalEnabled: false,
-                showCheckout: true
-            }
+            $('#view-cart').on('click', function(event) {
+                squadup = {
+                    title: 'ReImagine Events',
+                    image: 'https://static1.squarespace.com/static/57db3bf82994ca0f0c8fe90c/t/58f02d4bf5e231091c3fc95f/1492135250822/Asset+4.png',
+                    root: 'squadup-checkout',
+                    userId: [3430],
+                    collapseTicketDescription: true,
+                    shoppingCartEnabled: true,
+                    paypalEnabled: false,
+                    showCheckout: true
+                }
 
-        })();
+                loadScript(scriptToLoad, function(){
+                    console.log('script has loaded');
+                });
+
+                $('#checkoutModal').modal('show')
+            });
+        // });
     </script>
-    <script src="https://s3.amazonaws.com/checkoutstaging.squadup.com/main-v2.min.js"></script>
-
 
 </body>
 </html>
